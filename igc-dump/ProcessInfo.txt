@@ -1,0 +1,75 @@
+--- PID 19772: IGC library has been loaded at Mon Nov 23 12:35:17 2026 ---
+IGC library: 64-bit Release Internal
+
+Build version: BUILD ID: gfx-driver-ci-master-22005, CONFIGURATION: ReleaseInternal x64
+
+LLVM major version: 14
+
+OS: Windows build 10.0.26200
+
+Current working directory: C:\Users\yarudu\Documents\project\llama.cpp\igc-dump
+
+Path to executable: C:\Users\yarudu\Documents\project\llama.cpp\build\bin\RelWithDebInfo\test-backend-ops.exe
+
+Command line: "C:\Users\yarudu\Documents\project\llama.cpp\build\bin\RelWithDebInfo\test-backend-ops.exe" -b Vulkan0 -o MUL_MAT -p b_max=1000
+
+Path to IGC library: C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch_d.inf_amd64_28b69a32dd928ac9\igc64.dll;C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_7dec88a1950b9616\igc64.dll;C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch_d.inf_amd64_28b69a32dd928ac9\igc-default64.dll
+
+Registry:
+
+Environment:
+IGC_DumpToCurrentDir=1
+IGC_ShaderDumpEnable=1
+Intellogs=C:\Intel\Logs
+VK_SDK_PATH=C:\VulkanSDK\1.4.363.1
+VULKAN_SDK=C:\VulkanSDK\1.4.363.1
+
+
+--- PID 19772: IGC library is about to be unloaded at Mon Nov 23 12:35:17 2026 ---
+
+Module list:
+Path to Vulkan UMD library: C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch_d.inf_amd64_28b69a32dd928ac9\igvk64.dll;C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_7dec88a1950b9616\igvk64.dll
+Path to Vulkan RT library: C:\WINDOWS\SYSTEM32\vulkan-1.dll
+
+Compilation threads used: 1
+
+
+--- PID 9912: IGC library has been loaded at Mon Nov 23 12:35:36 2026 ---
+IGC library: 64-bit Release Internal
+
+Build version: BUILD ID: gfx-driver-ci-master-22005, CONFIGURATION: ReleaseInternal x64
+
+LLVM major version: 14
+
+OS: Windows build 10.0.26200
+
+Current working directory: C:\Users\yarudu\Documents\project\llama.cpp\igc-dump
+
+Path to executable: C:\Users\yarudu\Documents\project\llama.cpp\build\bin\RelWithDebInfo\test-backend-ops.exe
+
+Command line: "C:\Users\yarudu\Documents\project\llama.cpp\build\bin\RelWithDebInfo\test-backend-ops.exe" -b Vulkan0 -o MUL_MAT -p b_max=1000
+
+Path to IGC library: C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch_d.inf_amd64_28b69a32dd928ac9\igc64.dll;C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_7dec88a1950b9616\igc64.dll;C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch_d.inf_amd64_28b69a32dd928ac9\igc-default64.dll
+
+Registry:
+
+Environment:
+IGC_DumpGenISA=1
+IGC_DumpISA=1
+IGC_DumpToCurrentDir=1
+IGC_DumpVISAASM=1
+IGC_ShaderDumpEnable=1
+Intellogs=C:\Intel\Logs
+VK_SDK_PATH=C:\VulkanSDK\1.4.363.1
+VULKAN_SDK=C:\VulkanSDK\1.4.363.1
+
+
+--- PID 9912: IGC library is about to be unloaded at Mon Nov 23 12:35:37 2026 ---
+
+Module list:
+Path to Vulkan UMD library: C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch_d.inf_amd64_28b69a32dd928ac9\igvk64.dll;C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_7dec88a1950b9616\igvk64.dll
+Path to Vulkan RT library: C:\WINDOWS\SYSTEM32\vulkan-1.dll
+
+Compilation threads used: 1
+
+

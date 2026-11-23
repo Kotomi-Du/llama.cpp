@@ -1,0 +1,108 @@
+; SPIR-V
+; Version: 1.6
+; Generator: Khronos Glslang Reference Front End; 11
+; Bound: 67
+; Schema: 0
+               OpCapability Shader
+               OpCapability StorageImageWriteWithoutFormat
+          %1 = OpExtInstImport "GLSL.std.450"
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %InternalFillBufferCompute "InternalFillBufferCompute" %gl_GlobalInvocationID %_ %resultImage
+               OpExecutionMode %InternalFillBufferCompute LocalSize 1024 1 1
+               OpSource GLSL 450
+               OpName %InternalFillBufferCompute "InternalFillBufferCompute"
+               OpName %x "x"
+               OpName %gl_GlobalInvocationID "gl_GlobalInvocationID"
+               OpName %copyValues "copyValues"
+               OpMemberName %copyValues 0 "data"
+               OpMemberName %copyValues 1 "width"
+               OpMemberName %copyValues 2 "height"
+               OpName %_ ""
+               OpName %y "y"
+               OpName %z "z"
+               OpName %resultImage "resultImage"
+               OpDecorate %gl_GlobalInvocationID BuiltIn GlobalInvocationId
+               OpDecorate %copyValues Block
+               OpMemberDecorate %copyValues 0 Offset 0
+               OpMemberDecorate %copyValues 1 Offset 16
+               OpMemberDecorate %copyValues 2 Offset 20
+               OpDecorate %resultImage NonReadable
+               OpDecorate %resultImage Binding 0
+               OpDecorate %resultImage DescriptorSet 0
+       %void = OpTypeVoid
+          %3 = OpTypeFunction %void
+       %uint = OpTypeInt 32 0
+%_ptr_Function_uint = OpTypePointer Function %uint
+     %v3uint = OpTypeVector %uint 3
+%_ptr_Input_v3uint = OpTypePointer Input %v3uint
+%gl_GlobalInvocationID = OpVariable %_ptr_Input_v3uint Input
+     %uint_0 = OpConstant %uint 0
+%_ptr_Input_uint = OpTypePointer Input %uint
+     %v4uint = OpTypeVector %uint 4
+ %copyValues = OpTypeStruct %v4uint %uint %uint
+%_ptr_PushConstant_copyValues = OpTypePointer PushConstant %copyValues
+          %_ = OpVariable %_ptr_PushConstant_copyValues PushConstant
+        %int = OpTypeInt 32 1
+      %int_1 = OpConstant %int 1
+%_ptr_PushConstant_uint = OpTypePointer PushConstant %uint
+     %uint_1 = OpConstant %uint 1
+       %bool = OpTypeBool
+      %int_2 = OpConstant %int 2
+         %49 = OpTypeImage %uint 3D 0 0 0 2 Unknown
+%_ptr_UniformConstant_49 = OpTypePointer UniformConstant %49
+%resultImage = OpVariable %_ptr_UniformConstant_49 UniformConstant
+      %v3int = OpTypeVector %int 3
+      %int_0 = OpConstant %int 0
+%_ptr_PushConstant_v4uint = OpTypePointer PushConstant %v4uint
+  %uint_1024 = OpConstant %uint 1024
+         %66 = OpConstantComposite %v3uint %uint_1024 %uint_1 %uint_1
+%InternalFillBufferCompute = OpFunction %void None %3
+          %5 = OpLabel
+          %x = OpVariable %_ptr_Function_uint Function
+          %y = OpVariable %_ptr_Function_uint Function
+          %z = OpVariable %_ptr_Function_uint Function
+         %14 = OpAccessChain %_ptr_Input_uint %gl_GlobalInvocationID %uint_0
+         %15 = OpLoad %uint %14
+         %23 = OpAccessChain %_ptr_PushConstant_uint %_ %int_1
+         %24 = OpLoad %uint %23
+         %25 = OpUMod %uint %15 %24
+               OpStore %x %25
+         %27 = OpAccessChain %_ptr_Input_uint %gl_GlobalInvocationID %uint_0
+         %28 = OpLoad %uint %27
+         %29 = OpAccessChain %_ptr_PushConstant_uint %_ %int_1
+         %30 = OpLoad %uint %29
+         %31 = OpUDiv %uint %28 %30
+               OpStore %y %31
+               OpStore %z %uint_1
+         %35 = OpLoad %uint %x
+         %36 = OpAccessChain %_ptr_PushConstant_uint %_ %int_1
+         %37 = OpLoad %uint %36
+         %38 = OpULessThan %bool %35 %37
+               OpSelectionMerge %40 None
+               OpBranchConditional %38 %39 %40
+         %39 = OpLabel
+         %41 = OpLoad %uint %y
+         %43 = OpAccessChain %_ptr_PushConstant_uint %_ %int_2
+         %44 = OpLoad %uint %43
+         %45 = OpULessThan %bool %41 %44
+               OpBranch %40
+         %40 = OpLabel
+         %46 = OpPhi %bool %38 %5 %45 %39
+               OpSelectionMerge %48 None
+               OpBranchConditional %46 %47 %48
+         %47 = OpLabel
+         %52 = OpLoad %49 %resultImage
+         %53 = OpLoad %uint %x
+         %54 = OpBitcast %int %53
+         %55 = OpLoad %uint %y
+         %56 = OpBitcast %int %55
+         %57 = OpLoad %uint %z
+         %58 = OpBitcast %int %57
+         %60 = OpCompositeConstruct %v3int %54 %56 %58
+         %63 = OpAccessChain %_ptr_PushConstant_v4uint %_ %int_0
+         %64 = OpLoad %v4uint %63
+               OpImageWrite %52 %60 %64 ZeroExtend
+               OpBranch %48
+         %48 = OpLabel
+               OpReturn
+               OpFunctionEnd

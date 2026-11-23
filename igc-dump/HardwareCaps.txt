@@ -1,0 +1,26 @@
+// ------------------------------------------------
+// HardwareCaps.txt
+// ------------------------------------------------
+// Hardware Caps :
+EUCount 		= 	160
+ThreadCount 		= 	1280
+SliceCount 		= 	5
+SubSliceCount 		= 	20
+TotalPsThreadsWindowerRange 		= 	96
+TotalVsThreads 		= 	546
+TotalVsThreads_Pocs 		= 	0
+TotalGsThreads 		= 	312
+TotalDsThreads 		= 	546
+TotalHsThreads 		= 	336
+MaxEuPerSubSlice 		= 	8
+EuCountPerPoolMax 		= 	0
+EuCountPerPoolMin 		= 	0
+MaxSlicesSupported 		= 	5
+MaxSubSlicesSupported 		= 	20
+ProductFamily 		= 	IGFX_BMG
+PlatformFamily 		= 	IGFX_GEN12_CORE
+RenderGmdId 		= 	20.1.0
+UsDeviceID 		= 	0xe20b
+UsRevId 		= 	0x0
+UsDeviceID_PCH 		= 	0x0
+UsRevId_PCH 		= 	0x11

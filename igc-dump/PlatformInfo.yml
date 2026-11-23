@@ -1,0 +1,3999 @@
+--- !<spv::Platform>
+m_Platform: !<PLATFORM_STR>
+  eProductFamily: !<PRODUCT_FAMILY> IGFX_BMG
+  ePCHProductFamily: !<PCH_PRODUCT_FAMILY> PCH_UNKNOWN
+  eDisplayCoreFamily: !<GFXCORE_FAMILY> IGFX_GEN14_1_CORE
+  eRenderCoreFamily: !<GFXCORE_FAMILY> IGFX_XE2_HPG_CORE
+  ePlatformType: !<PLATFORM_TYPE> PLATFORM_DESKTOP
+  usDeviceID: !<uint16_t> 57867 # 0xe20b
+  usRevId: !<uint16_t> 0 # 0x0000
+  usSubSystemVenderID: !<uint16_t> 32902 # 0x8086
+  usSubSystemID: !<uint16_t> 4352 # 0x1100
+  usDeviceID_PCH: !<uint16_t> 0 # 0x0000
+  usRevId_PCH: !<uint16_t> 17 # 0x0011
+  eGTType: !<__GTTYPE> GTTYPE_GT1
+  eMediaCoreFamily: !<GFXCORE_FAMILY> IGFX_GEN13_1_CORE
+  sDisplayBlockID: !<GFX_GMD_ID_DEF>
+    GmdID:
+      RevisionID: !<uint32_t> 4 # 0x00000004
+      Reserved: !<uint32_t> 0 # 0x00000000
+      GMDRelease: !<uint32_t> 1 # 0x00000001
+      GMDArch: !<uint32_t> 14 # 0x0000000e
+  sDisplayPicaBlockID: !<GFX_GMD_ID_DEF>
+    GmdID:
+      RevisionID: !<uint32_t> 0 # 0x00000000
+      Reserved: !<uint32_t> 0 # 0x00000000
+      GMDRelease: !<uint32_t> 4 # 0x00000004
+      GMDArch: !<uint32_t> 0 # 0x00000000
+  sRenderBlockID: !<GFX_GMD_ID_DEF>
+    GmdID:
+      RevisionID: !<uint32_t> 0 # 0x00000000
+      Reserved: !<uint32_t> 0 # 0x00000000
+      GMDRelease: !<uint32_t> 1 # 0x00000001
+      GMDArch: !<uint32_t> 20 # 0x00000014
+  sMediaBlockID: !<GFX_GMD_ID_DEF>
+    GmdID:
+      RevisionID: !<uint32_t> 1 # 0x00000001
+      Reserved: !<uint32_t> 0 # 0x00000000
+      GMDRelease: !<uint32_t> 1 # 0x00000001
+      GMDArch: !<uint32_t> 13 # 0x0000000d
+  usOriginalRevIdFromPciConfig: !<uint16_t> 0 # 0x0000
+  padding: !<uint16_t> 0 # 0x0000
+m_Sku: !<_SKU_FEATURE_TABLE>
+  FtrDesktop: !<uint32_t> 1 # 0x00000001
+  FtrMultiFunc: !<uint32_t> 0 # 0x00000000
+  FtrGttBar: !<uint32_t> 1 # 0x00000001
+  FtrGmadrBar: !<uint32_t> 0 # 0x00000000
+  FtrStolenAsLmemBar: !<uint32_t> 0 # 0x00000000
+  FtrMmioBar: !<uint32_t> 1 # 0x00000001
+  FtrDioBar: !<uint32_t> 0 # 0x00000000
+  FtrOptionRomBar: !<uint32_t> 1 # 0x00000001
+  FtrPrimaryVga: !<uint32_t> 1 # 0x00000001
+  FtrCoreClkLimit: !<uint32_t> 0 # 0x00000000
+  Ftr36BitPhysAddress: !<uint32_t> 1 # 0x00000001
+  FtrVTdEnabled: !<uint32_t> 0 # 0x00000000
+  FtrVERing: !<uint32_t> 1 # 0x00000001
+  FtrVecs2: !<uint32_t> 0 # 0x00000000
+  FtrBlitterRing: !<uint32_t> 1 # 0x00000001
+  FtrMFXRing: !<uint32_t> 1 # 0x00000001
+  FtrVcs2: !<uint32_t> 0 # 0x00000000
+  FtrVcs3: !<uint32_t> 0 # 0x00000000
+  Ftr3dRing: !<uint32_t> 1 # 0x00000001
+  FtrGtBigDie: !<uint32_t> 0 # 0x00000000
+  FtrGtMediumDie: !<uint32_t> 0 # 0x00000000
+  FtrGtSmallDie: !<uint32_t> 0 # 0x00000000
+  FtrGT1: !<uint32_t> 0 # 0x00000000
+  FtrNativeGT1: !<uint32_t> 0 # 0x00000000
+  FtrGT1_5: !<uint32_t> 0 # 0x00000000
+  FtrGT1_75: !<uint32_t> 0 # 0x00000000
+  FtrGT1_6: !<uint32_t> 0 # 0x00000000
+  FtrGT2: !<uint32_t> 0 # 0x00000000
+  FtrNativeGT2: !<uint32_t> 0 # 0x00000000
+  FtrGT3: !<uint32_t> 0 # 0x00000000
+  FtrNativeGT3: !<uint32_t> 0 # 0x00000000
+  FtrGT4: !<uint32_t> 0 # 0x00000000
+  FtrPureGT1: !<uint32_t> 0 # 0x00000000
+  FtrGTEuRowSelectLower: !<uint32_t> 0 # 0x00000000
+  FtrGTEuRowSelectUpper: !<uint32_t> 0 # 0x00000000
+  FtrGT4plus2: !<uint32_t> 0 # 0x00000000
+  FtrGT4plus1: !<uint32_t> 0 # 0x00000000
+  FtrGT2plus2: !<uint32_t> 0 # 0x00000000
+  FtrGT2plus1: !<uint32_t> 0 # 0x00000000
+  FtrEmbeddedPlatformEnabled: !<uint32_t> 0 # 0x00000000
+  FtrULT: !<uint32_t> 0 # 0x00000000
+  FtrIVBK0Platform: !<uint32_t> 0 # 0x00000000
+  FtrIVBM0M1Platform: !<uint32_t> 0 # 0x00000000
+  FtrIVBL0Platform: !<uint32_t> 0 # 0x00000000
+  FtrIVBL1Platform: !<uint32_t> 0 # 0x00000000
+  FtrIVBN0Platform: !<uint32_t> 0 # 0x00000000
+  FtrIVBE0E1Platform: !<uint32_t> 0 # 0x00000000
+  FtrIVBE2Platform: !<uint32_t> 0 # 0x00000000
+  FtrInternalSSC: !<uint32_t> 0 # 0x00000000
+  FtrChannelSwizzlingXOREnabled: !<uint32_t> 0 # 0x00000000
+  FtrULX: !<uint32_t> 0 # 0x00000000
+  FtrPipeCDisabled: !<uint32_t> 0 # 0x00000000
+  FtrPipeDDisabled: !<uint32_t> 0 # 0x00000000
+  FtrNumOfPipes: !<uint32_t> 4 # 0x00000004
+  FtrGTA: !<uint32_t> 0 # 0x00000000
+  FtrGTC: !<uint32_t> 0 # 0x00000000
+  FtrGTX: !<uint32_t> 0 # 0x00000000
+  Ftr5Slice: !<uint32_t> 0 # 0x00000000
+  FtrLLCMLCNotSupported: !<uint32_t> 0 # 0x00000000
+  FtrGfxClientSubmission: !<uint32_t> 0 # 0x00000000
+  FtrLCIA: !<uint32_t> 0 # 0x00000000
+  FtrHalo: !<uint32_t> 0 # 0x00000000
+  FtrDt: !<uint32_t> 0 # 0x00000000
+  FtrPosh: !<uint32_t> 0 # 0x00000000
+  FtrResourceStreamer: !<uint32_t> 0 # 0x00000000
+  FtrShaderDoubleSupportDisabled: !<uint32_t> 0 # 0x00000000
+  FtrHwSemaphore: !<uint32_t> 1 # 0x00000001
+  FtrHwSemaphore64: !<uint32_t> 0 # 0x00000000
+  Ftr3TierAlgorithm: !<uint32_t> 0 # 0x00000000
+  FtrCCSRing: !<uint32_t> 1 # 0x00000001
+  FtrPAAC: !<uint32_t> 0 # 0x00000000
+  FtrEnableCCSViaIGCC: !<uint32_t> 0 # 0x00000000
+  FtrCCSViaIGCCLimitedToDx12Vk: !<uint32_t> 0 # 0x00000000
+  FtrCCSNode: !<uint32_t> 1 # 0x00000001
+  FtrNeuralNode: !<uint32_t> 0 # 0x00000000
+  FtrCCSMultiInstance: !<uint32_t> 0 # 0x00000000
+  FtrSuperSku: !<uint32_t> 0 # 0x00000000
+  Ftr3rdLevelBB: !<uint32_t> 1 # 0x00000001
+  FtrRSDisabledHWBindingTableEnabled: !<uint32_t> 1 # 0x00000001
+  FtrAdvancedMMIOWhitelist: !<uint32_t> 1 # 0x00000001
+  FtrMediaIPSeparation: !<uint32_t> 1 # 0x00000001
+  FtrRAMode: !<uint32_t> 0 # 0x00000000
+  FtrProtectedEnableBitRequired: !<uint32_t> 1 # 0x00000001
+  FtrGTGuC: !<uint32_t> 1 # 0x00000001
+  FtrMediaGuC: !<uint32_t> 1 # 0x00000001
+  FtrMemoryRemapSupport: !<uint32_t> 0 # 0x00000000
+  FtrL3TransientDataFlush: !<uint32_t> 1 # 0x00000001
+  FtrTDFMonitorAddress: !<uint32_t> 1 # 0x00000001
+  FtrL3TDFOptimization: !<uint32_t> 0 # 0x00000000
+  FtrHwStateDumpByGuc: !<uint32_t> 0 # 0x00000000
+  FtrOCACSRegRange: !<uint32_t> 1 # 0x00000001
+  FtrOCAGUCRegRange: !<uint32_t> 1 # 0x00000001
+  FtrPagingNode: !<uint32_t> 1 # 0x00000001
+  FtrPagingEngineClass: !<uint32_t> 0 # 0x00000000
+  FtrPerformRangeBasedTlbInvalidation: !<uint32_t> 1 # 0x00000001
+  FtrPerformRangeBasedGucTlbInvalidation: !<uint32_t> 1 # 0x00000001
+  FtrPerformSystemCacheInvalidation: !<uint32_t> 1 # 0x00000001
+  FtrStateSeparation: !<uint32_t> 1 # 0x00000001
+  FtrEuDebug: !<uint32_t> 1 # 0x00000001
+  FtrPerContextEuDebug: !<uint32_t> 0 # 0x00000000
+  FtrForceFlrOnTdrFailure: !<uint32_t> 0 # 0x00000000
+  FtrRestrictInvalidFenceIdReporting: !<uint32_t> 0 # 0x00000000
+  FtrSkipInvalidSubmitsFromOS: !<uint32_t> 1 # 0x00000001
+  FtrTLBInvalidationOptimization: !<uint32_t> 1 # 0x00000001
+  FtrKernelSyncLocksProfiler: !<uint32_t> 0 # 0x00000000
+  FtrEnableAsyncCompute: !<uint32_t> 1 # 0x00000001
+  FtrGucLoadFailSafe: !<uint32_t> 1 # 0x00000001
+  FtrLinearCaptureSurface: !<uint32_t> 1 # 0x00000001
+  FtrPrefetchFaultHandling: !<uint32_t> 0 # 0x00000000
+  FtrMultiQueue: !<uint32_t> 0 # 0x00000000
+  FtrDSM2: !<uint32_t> 0 # 0x00000000
+  FtrAppTransientCaching: !<uint32_t> 0 # 0x00000000
+  FtrDisplayTransientCaching: !<uint32_t> 0 # 0x00000000
+  FtrUseIndirectRingState: !<uint32_t> 0 # 0x00000000
+  FtrCSReadsCachedinL2: !<uint32_t> 1 # 0x00000001
+  FtrEnableHwsPriorityYield: !<uint32_t> 1 # 0x00000001
+  FtrDisableEngineIDbasedFlush: !<uint32_t> 0 # 0x00000000
+  Ftr1WayCoherentCompression: !<uint32_t> 0 # 0x00000000
+  FtrPageReclamationHwAssist: !<uint32_t> 0 # 0x00000000
+  FtrPageTableCaching: !<uint32_t> 0 # 0x00000000
+  FtrPerCommandCsMocs: !<uint32_t> 0 # 0x00000000
+  FtrWOPCMMemoryURB: !<uint32_t> 0 # 0x00000000
+  FtrWalkerInterrupt: !<uint32_t> 0 # 0x00000000
+  FtrTRTTPageTable2Way: !<uint32_t> 0 # 0x00000000
+  FtrGucLmsStackSize16k: !<uint32_t> 0 # 0x00000000
+  FtrPipeCtrlOptimization: !<uint32_t> 0 # 0x00000000
+  FtrCommandStreamerPerCommandMocsGT: !<uint32_t> 0 # 0x00000000
+  FtrCommandStreamerPerCommandMocsMedia: !<uint32_t> 0 # 0x00000000
+  FtrTscTimestamps: !<uint32_t> 0 # 0x00000000
+  FtrGucLmsStackSize16kMedia: !<uint32_t> 0 # 0x00000000
+  Ftr32ByteRenderSurfaceState: !<uint32_t> 0 # 0x00000000
+  FtrCI3Support: !<uint32_t> 0 # 0x00000000
+  FtrHWRotation: !<uint32_t> 0 # 0x00000000
+  FtrDisplayDisabled: !<uint32_t> 0 # 0x00000000
+  FtrSGTPVSKUStrapPresent: !<uint32_t> 0 # 0x00000000
+  FtrS0ixSRByGunit: !<uint32_t> 0 # 0x00000000
+  FtrGfxS0ixCapable: !<uint32_t> 1 # 0x00000001
+  FtrConnectedStandby: !<uint32_t> 0 # 0x00000000
+  FtrVRAMSelfRefresh: !<uint32_t> 0 # 0x00000000
+  FtrGfxPowerShare: !<uint32_t> 1 # 0x00000001
+  FtrMPO180HWRotation: !<uint32_t> 1 # 0x00000001
+  FtrCollageSupport: !<uint32_t> 1 # 0x00000001
+  FtrDualEdpCollageSupport: !<uint32_t> 0 # 0x00000000
+  FtrEdpPipeJoinerModeSupport: !<uint32_t> 0 # 0x00000000
+  FtrMPOSupport: !<uint32_t> 1 # 0x00000001
+  FtrDisableMPOMultiDisplayConfig: !<uint32_t> 0 # 0x00000000
+  FtrMPOSupportForMultiPipeDisplayPath: !<uint32_t> 1 # 0x00000001
+  FtrInvertRotation: !<uint32_t> 0 # 0x00000000
+  FtrEnable10bitRGBMPO: !<uint32_t> 1 # 0x00000001
+  FtrSAGVNotifyPCode: !<uint32_t> 1 # 0x00000001
+  FtrValidateDramBw: !<uint32_t> 0 # 0x00000000
+  FtrCoG: !<uint32_t> 1 # 0x00000001
+  FtrEdpVdsc: !<uint32_t> 1 # 0x00000001
+  FtrEnableAssertOnOnUnderrun: !<uint32_t> 0 # 0x00000000
+  FtrDpVdsc: !<uint32_t> 1 # 0x00000001
+  FtrDpMstVdsc: !<uint32_t> 1 # 0x00000001
+  FtrHdmiVdsc: !<uint32_t> 1 # 0x00000001
+  FtrDpSinkPreferredMstDsc: !<uint32_t> 0 # 0x00000000
+  FtrDpMstDscDisableBasedOnBranchId: !<uint32_t> 0 # 0x00000000
+  FtrFecSupportOnEdp: !<uint32_t> 0 # 0x00000000
+  FtrSupportYCbCrDsc: !<uint32_t> 1 # 0x00000001
+  FtrDualLfpPortSync: !<uint32_t> 0 # 0x00000000
+  FtrCmtgSupported: !<uint32_t> 1 # 0x00000001
+  FtrCmtgSyncToPort: !<uint32_t> 0 # 0x00000000
+  FtrSupportYCbCrAndSaturationEnable: !<uint32_t> 1 # 0x00000001
+  FtrSupportReleaseofEmptyDongle: !<uint32_t> 0 # 0x00000000
+  FtrSupportSmoothSync: !<uint32_t> 1 # 0x00000001
+  FtrSupportHwDarkScreenDetection: !<uint32_t> 0 # 0x00000000
+  FtrSpeedFrame: !<uint32_t> 0 # 0x00000000
+  FtrVsyncOn: !<uint32_t> 1 # 0x00000001
+  FtrVsyncOff: !<uint32_t> 1 # 0x00000001
+  FtrGamingSyncModeSupport: !<uint32_t> 1 # 0x00000001
+  FtrHrrSupported: !<uint32_t> 0 # 0x00000000
+  FtrAdaptiveSharpness: !<uint32_t> 0 # 0x00000000
+  FtrDisplayDisconnect: !<uint32_t> 0 # 0x00000000
+  FtrDpSingleStreamDscEnableAlways: !<uint32_t> 0 # 0x00000000
+  FtrDp2p1LinkRateOptimization: !<uint32_t> 0 # 0x00000000
+  FtrDisableLayerReordering: !<uint32_t> 0 # 0x00000000
+  FtrVirtualDisplaySupport: !<uint32_t> 0 # 0x00000000
+  FtrMultiVirtualDisplaySupport: !<uint32_t> 0 # 0x00000000
+  FtrUnderrunClassificationSupport: !<uint32_t> 1 # 0x00000001
+  FtrPlaneSizeOffSetRestriction: !<uint32_t> 0 # 0x00000000
+  FtrAsyncFlipClearColorSupport: !<uint32_t> 1 # 0x00000001
+  FtrKeepGPUAwake: !<uint32_t> 0 # 0x00000000
+  Ftr3DLutPersistancePostPowerEvents: !<uint32_t> 1 # 0x00000001
+  FtrUse2XWMLatencies: !<uint32_t> 0 # 0x00000000
+  FtrHwCasfSupport: !<uint32_t> 0 # 0x00000000
+  FtrLoadDmcFwFromFile: !<uint32_t> 0 # 0x00000000
+  FtreDPCoGonPipeB: !<uint32_t> 0 # 0x00000000
+  Ftr4x1Cog: !<uint32_t> 0 # 0x00000000
+  FtrDscFractionalBpp: !<uint32_t> 1 # 0x00000001
+  FtrDisablePsrInVpbWithLace: !<uint32_t> 0 # 0x00000000
+  FtrSdpDoubleBuffering: !<uint32_t> 1 # 0x00000001
+  CdClockby2DivChange: !<uint32_t> 0 # 0x00000000
+  FtrAdaptiveSyncSdp: !<uint32_t> 1 # 0x00000001
+  FtrNativeHdmi21Support: !<uint32_t> 1 # 0x00000001
+  FtrReportSecondLfpAsExternal: !<uint32_t> 0 # 0x00000000
+  FtrMinDbufSupportForFBR: !<uint32_t> 1 # 0x00000001
+  FtrGenLockEnabled: !<uint32_t> 0 # 0x00000000
+  FtrGenLockFuseDisabled: !<uint32_t> 0 # 0x00000000
+  FtrSupportS3D: !<uint32_t> 0 # 0x00000000
+  FtrSupportInterlacedMode: !<uint32_t> 0 # 0x00000000
+  FtrDp14AudSdpSplitting: !<uint32_t> 1 # 0x00000001
+  FtrEnableDbufOverlapDetection: !<uint32_t> 0 # 0x00000000
+  FtrFlipQBasedVbiMasking: !<uint32_t> 0 # 0x00000000
+  FtrAlrrSupport: !<uint32_t> 0 # 0x00000000
+  FtrDisableAllmSupport: !<uint32_t> 0 # 0x00000000
+  FtrEnableEmpSdpTlProgramming: !<uint32_t> 1 # 0x00000001
+  FtrRestrictCdClkTo480Mhz: !<uint32_t> 0 # 0x00000000
+  FtrDirectFlipEdidMgmnt: !<uint32_t> 0 # 0x00000000
+  FtrDirectFlipCombinedDisplay: !<uint32_t> 0 # 0x00000000
+  FtrDpSymbolClockBasedTG: !<uint32_t> 0 # 0x00000000
+  FtrDisableDpLegacyAudioInterface: !<uint32_t> 0 # 0x00000000
+  FtrDirectFlipSLS: !<uint32_t> 0 # 0x00000000
+  FtrDp8b10bLTEnableAuxBurstWrite: !<uint32_t> 1 # 0x00000001
+  FtrOsManagedConnectionChangeFlag: !<uint32_t> 0 # 0x00000000
+  FtrPreferTmdsforLowerDotclock: !<uint32_t> 1 # 0x00000001
+  FtrEnableDpExtendedSleep: !<uint32_t> 0 # 0x00000000
+  FtrDynamicRoutingOfNativeDisplay: !<uint32_t> 0 # 0x00000000
+  FtrSecondEdpFusedOff: !<uint32_t> 0 # 0x00000000
+  FtrLowRefreshRateFused: !<uint32_t> 0 # 0x00000000
+  FtrDynamicVoltageReduction: !<uint32_t> 0 # 0x00000000
+  FtrClearVideoTechnology: !<uint32_t> 1 # 0x00000001
+  FtrPooledEuEnabled: !<uint32_t> 0 # 0x00000000
+  FtrMediaSupportResourcePooling: !<uint32_t> 0 # 0x00000000
+  FtrMuC: !<uint32_t> 0 # 0x00000000
+  FtrTVWizardSupport: !<uint32_t> 1 # 0x00000001
+  FtrCapGttMapAddr: !<uint32_t> 0 # 0x00000000
+  FtrOverlay: !<uint32_t> 0 # 0x00000000
+  FtrOverlayMmioFlip: !<uint32_t> 0 # 0x00000000
+  FtrAsyncMMIOFlipSupport: !<uint32_t> 1 # 0x00000001
+  FtrMediaReset: !<uint32_t> 1 # 0x00000001
+  FtrParallelEngine: !<uint32_t> 1 # 0x00000001
+  FtrEnableCloneOverlay: !<uint32_t> 0 # 0x00000000
+  FtrEnableCollageOverlay: !<uint32_t> 0 # 0x00000000
+  FtrEnableTDDebugControlRegKey: !<uint32_t> 1 # 0x00000001
+  FtrGpGpuMidBatchPreempt: !<uint32_t> 1 # 0x00000001
+  FtrGpGpuThreadGroupLevelPreempt: !<uint32_t> 1 # 0x00000001
+  FtrGpGpuMidThreadLevelPreempt: !<uint32_t> 0 # 0x00000000
+  Ftr3dMidBatchPreempt: !<uint32_t> 1 # 0x00000001
+  Ftr3dObjectLevelPreempt: !<uint32_t> 1 # 0x00000001
+  FtrMediaMidBatchPreempt: !<uint32_t> 1 # 0x00000001
+  FtrMediaThreadGroupLevelPreempt: !<uint32_t> 1 # 0x00000001
+  FtrMediaMidThreadLevelPreempt: !<uint32_t> 0 # 0x00000000
+  FtrPerCtxtPreemptionGranularityControl: !<uint32_t> 1 # 0x00000001
+  FtrDisableWDDMPreempt: !<uint32_t> 0 # 0x00000000
+  FtrWalkerMTP: !<uint32_t> 1 # 0x00000001
+  FtrSelectiveWmtp: !<uint32_t> 1 # 0x00000001
+  FtrBigPage: !<uint32_t> 0 # 0x00000000
+  FtrPPGTT: !<uint32_t> 1 # 0x00000001
+  FtrIA32eGfxPTEs: !<uint32_t> 1 # 0x00000001
+  FtrMemTypeMocsDeferPAT: !<uint32_t> 0 # 0x00000000
+  FtrPml4Support: !<uint32_t> 1 # 0x00000001
+  FtrPml3OnHwPml4Support: !<uint32_t> 0 # 0x00000000
+  FtrSVM: !<uint32_t> 1 # 0x00000001
+  FtrUSM: !<uint32_t> 0 # 0x00000000
+  FtrTileMappedResource: !<uint32_t> 1 # 0x00000001
+  FtrTranslationTable: !<uint32_t> 1 # 0x00000001
+  FtrUserModeTranslationTable: !<uint32_t> 1 # 0x00000001
+  FtrNullPages: !<uint32_t> 1 # 0x00000001
+  FtrL3IACoherency: !<uint32_t> 0 # 0x00000000
+  FtrRemoteFx: !<uint32_t> 0 # 0x00000000
+  FtrEDram: !<uint32_t> 0 # 0x00000000
+  FtrL4Cache: !<uint32_t> 0 # 0x00000000
+  FtrL4High: !<uint32_t> 0 # 0x00000000
+  FtrLLCBypass: !<uint32_t> 0 # 0x00000000
+  FtrCentralCachePolicy: !<uint32_t> 0 # 0x00000000
+  FtrIoMmu: !<uint32_t> 0 # 0x00000000
+  FtrDriverControlledIoMmu: !<uint32_t> 0 # 0x00000000
+  FtrIoMmuPageFaulting: !<uint32_t> 0 # 0x00000000
+  FtrDmaBufferMemSpaceSplitting: !<uint32_t> 0 # 0x00000000
+  FtrSecurePPGTTUpdate: !<uint32_t> 1 # 0x00000001
+  FtrPigms: !<uint32_t> 0 # 0x00000000
+  FtrWddm2GpuMmu: !<uint32_t> 1 # 0x00000001
+  FtrWddm2Svm: !<uint32_t> 0 # 0x00000000
+  FtrStandardMipTailFormat: !<uint32_t> 1 # 0x00000001
+  FtrDisplayColorEnhancement: !<uint32_t> 0 # 0x00000000
+  FtrWddm2_1_64kbPages: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_2_2MBPages: !<uint32_t> 1 # 0x00000001
+  FtrE2ECompression: !<uint32_t> 1 # 0x00000001
+  FtrForceGlobalE2ECompState: !<uint32_t> 1 # 0x00000001
+  FtrLinearCCS: !<uint32_t> 1 # 0x00000001
+  FtrCopyEngineCompressionSupport: !<uint32_t> 0 # 0x00000000
+  FtrEnableLegacyBltMOCS: !<uint32_t> 1 # 0x00000001
+  FtrFP16SurfaceRenderDecompression: !<uint32_t> 1 # 0x00000001
+  FtrLocalMemory: !<uint32_t> 1 # 0x00000001
+  FtrPpgtt64KBWalkOptimization: !<uint32_t> 0 # 0x00000000
+  FtrPTEPageSize64: !<uint32_t> 1 # 0x00000001
+  FtrDiscrete: !<uint32_t> 1 # 0x00000001
+  FtrTileY: !<uint32_t> 0 # 0x00000000
+  FtrTileX: !<uint32_t> 1 # 0x00000001
+  FtrXe2PlusTiling: !<uint32_t> 1 # 0x00000001
+  FtrFlatPhysCCS: !<uint32_t> 1 # 0x00000001
+  FtrXe2Compression: !<uint32_t> 1 # 0x00000001
+  FtrMultiTileArch: !<uint32_t> 0 # 0x00000000
+  FtrLocalMemoryAllows4KB: !<uint32_t> 1 # 0x00000001
+  FtrDisplayXTiling: !<uint32_t> 0 # 0x00000000
+  FtrFastCopyWith3DOperation: !<uint32_t> 1 # 0x00000001
+  FtrUnified3DMediaCompressionFormats: !<uint32_t> 1 # 0x00000001
+  FtrDisplayPageTables: !<uint32_t> 1 # 0x00000001
+  Ftr57bGPUAddressing: !<uint32_t> 0 # 0x00000000
+  FtrUnifiedCompression43Ratio: !<uint32_t> 1 # 0x00000001
+  FtrOsManagedGlobalGtt: !<uint32_t> 0 # 0x00000000
+  FtrCameraCaptureCaching: !<uint32_t> 0 # 0x00000000
+  FtrLimitedLMemBar: !<uint32_t> 0 # 0x00000000
+  FtrBLTSaveRestore: !<uint32_t> 1 # 0x00000001
+  FtrGpuPageTableUpdates: !<uint32_t> 0 # 0x00000000
+  FtrPml5Support: !<uint32_t> 1 # 0x00000001
+  FtrUMA: !<uint32_t> 0 # 0x00000000
+  FtrCacheCoherentUMA: !<uint32_t> 0 # 0x00000000
+  FtrKmdManagedDPTAllocation: !<uint32_t> 0 # 0x00000000
+  FtrPoolAllocRecycler: !<uint32_t> 1 # 0x00000001
+  FtrCacheHostReqToDMInL2: !<uint32_t> 1 # 0x00000001
+  FtrAutoDetectCompFormat: !<uint32_t> 0 # 0x00000000
+  FtrKMDManagedHostToDevMem: !<uint32_t> 0 # 0x00000000
+  FtrSTLBBankHash4kMode: !<uint32_t> 0 # 0x00000000
+  FtrCcsSaveRestoreLrca: !<uint32_t> 0 # 0x00000000
+  FtrCtrlSurfCopySizeInc: !<uint32_t> 0 # 0x00000000
+  FtrKMDTestSupportFromRegKey: !<uint32_t> 1 # 0x00000001
+  FtrKmdDaf: !<uint32_t> 0 # 0x00000000
+  FtrDisableOverlayRotation: !<uint32_t> 0 # 0x00000000
+  FtrUnmapPagingReservedGTTSeg: !<uint32_t> 0 # 0x00000000
+  FtrKmdNotifyUmd: !<uint32_t> 1 # 0x00000001
+  FtrDeferredWaitForEventOnAsyncFlip: !<uint32_t> 1 # 0x00000001
+  FtrPerfModeSdiWrite: !<uint32_t> 0 # 0x00000000
+  FtrUse3DEngineforLateralBlts: !<uint32_t> 0 # 0x00000000
+  FtrGuCWriteCombineEnable: !<uint32_t> 0 # 0x00000000
+  FtrGuCInternalMsgChannelEnable: !<uint32_t> 1 # 0x00000001
+  FtrSubSliceIzHashing: !<uint32_t> 0 # 0x00000000
+  FtrFrameBufferLLC: !<uint32_t> 0 # 0x00000000
+  FtrGpuMmuPageFault: !<uint32_t> 1 # 0x00000001
+  FtrDriverFLR: !<uint32_t> 1 # 0x00000001
+  FtrOSManagedAllocations: !<uint32_t> 1 # 0x00000001
+  FtrCsResponseEventOptimization: !<uint32_t> 1 # 0x00000001
+  FtrWatchdogTimerEnabledByUMD: !<uint32_t> 1 # 0x00000001
+  FtrContextBasedScheduling: !<uint32_t> 1 # 0x00000001
+  FtrSfcScalability: !<uint32_t> 1 # 0x00000001
+  FtrVeboxScalabilitywith4K: !<uint32_t> 1 # 0x00000001
+  FtrWithSlimVdbox: !<uint32_t> 0 # 0x00000000
+  FtrFeatureInterface: !<uint32_t> 1 # 0x00000001
+  FtrHwScheduling: !<uint32_t> 1 # 0x00000001
+  FtrHwsGucDirectLogging: !<uint32_t> 0 # 0x00000000
+  FtrNativeFence: !<uint32_t> 0 # 0x00000000
+  FtrUserModeSubmission: !<uint32_t> 0 # 0x00000000
+  FtrUnifiedSchedulingModel: !<uint32_t> 0 # 0x00000000
+  FtrSignalCpuWaitersViaGuc: !<uint32_t> 0 # 0x00000000
+  FtrSwAssistedOCA: !<uint32_t> 1 # 0x00000001
+  FtrLRMLiteRestore: !<uint32_t> 0 # 0x00000000
+  FtrCrossAdapterResourceTexture: !<uint32_t> 1 # 0x00000001
+  FtrCrossAdapterResourceScanout: !<uint32_t> 0 # 0x00000000
+  FtrVfLogging: !<uint32_t> 0 # 0x00000000
+  FtrSriovVfLmemTracking: !<uint32_t> 0 # 0x00000000
+  FtrUtilizeMemDimondLane: !<uint32_t> 1 # 0x00000001
+  FtrNewEncodingForSAMediaWOPCM: !<uint32_t> 1 # 0x00000001
+  FtrReserveADMXbarHashGuardBand: !<uint32_t> 1 # 0x00000001
+  FtrXe2HiZPlaneCompression: !<uint32_t> 0 # 0x00000000
+  FtrVtdErrorCursor64K: !<uint32_t> 0 # 0x00000000
+  FtrOptimizedGTTInit: !<uint32_t> 1 # 0x00000001
+  FtrVirtualTileScalabilityDisable: !<uint32_t> 0 # 0x00000000
+  FtrTile64Optimization: !<uint32_t> 1 # 0x00000001
+  FtrCentralizedCachePoilcy: !<uint32_t> 0 # 0x00000000
+  FtrPATCentricCachePolicy: !<uint32_t> 0 # 0x00000000
+  FtrSiblingStreamingPools: !<uint32_t> 1 # 0x00000001
+  FtrPTS: !<uint32_t> 1 # 0x00000001
+  FtrPS64: !<uint32_t> 1 # 0x00000001
+  FtrVeboxTypeH: !<uint32_t> 0 # 0x00000000
+  FtrSharedGpuMemoryOverrideSupported: !<uint32_t> 0 # 0x00000000
+  FtrTileB: !<uint32_t> 0 # 0x00000000
+  FtrPbmm: !<uint32_t> 0 # 0x00000000
+  FtrNotifyResidency2: !<uint32_t> 0 # 0x00000000
+  FtrLoadGucFwFromFile: !<uint32_t> 0 # 0x00000000
+  FtrWhitelistTdCtl: !<uint32_t> 0 # 0x00000000
+  FtrDisableGtIpSubmissions: !<uint32_t> 0 # 0x00000000
+  FtrPPGTTCachingInL3: !<uint32_t> 0 # 0x00000000
+  FtrTelemetryDebugLog: !<uint32_t> 0 # 0x00000000
+  FtrEfficient64BitAddressing: !<uint32_t> 0 # 0x00000000
+  FtrEfficient64BitKMDKernels: !<uint32_t> 0 # 0x00000000
+  FtrSinglePsKernelWith8PolysPerThr: !<uint32_t> 0 # 0x00000000
+  FtrSteeringIndependentGAM: !<uint32_t> 0 # 0x00000000
+  FtrEnableG2GCTBCommunication: !<uint32_t> 0 # 0x00000000
+  FtrEnableCoreLogging: !<uint32_t> 1 # 0x00000001
+  FtrFaultAndStall: !<uint32_t> 0 # 0x00000000
+  FtrWddmIC: !<uint32_t> 0 # 0x00000000
+  FtrCCSCopyFallbackEnabled: !<uint32_t> 0 # 0x00000000
+  FtrEnableArchPolicy: !<uint32_t> 1 # 0x00000001
+  FtrHwsFenceTracking: !<uint32_t> 1 # 0x00000001
+  Ftr2DHeight1ToLinear: !<uint32_t> 0 # 0x00000000
+  FtrTLBInvOptInGmmUpdatePT: !<uint32_t> 0 # 0x00000000
+  FtrMediaGmmLib2Stage2_1: !<uint32_t> 0 # 0x00000000
+  FtrFastClear8VAlign: !<uint32_t> 0 # 0x00000000
+  FtrProgrammableFrontEnd: !<uint32_t> 0 # 0x00000000
+  FtrGmmKmdAllocCcr: !<uint32_t> 0 # 0x00000000
+  FtrGmmStdAllocCcr: !<uint32_t> 1 # 0x00000001
+  FtrGmmGttCcr: !<uint32_t> 0 # 0x00000000
+  FtrImmText128: !<uint32_t> 1 # 0x00000001
+  FtrSecondSprite: !<uint32_t> 0 # 0x00000000
+  FtrRGBOverlay: !<uint32_t> 0 # 0x00000000
+  FtrOneLineMode: !<uint32_t> 0 # 0x00000000
+  FtrAsyncFlipOnPlaneB: !<uint32_t> 0 # 0x00000000
+  FtrPlanarToPacked: !<uint32_t> 0 # 0x00000000
+  FtrTwoSprites: !<uint32_t> 1 # 0x00000001
+  FtrSprites17Gamma: !<uint32_t> 0 # 0x00000000
+  FtrMELockableSprite: !<uint32_t> 0 # 0x00000000
+  FtrOverlaySynch: !<uint32_t> 0 # 0x00000000
+  FtrPixelShader: !<uint32_t> 0 # 0x00000000
+  FtrPixelShader30: !<uint32_t> 0 # 0x00000000
+  FtrBWGConsumerTextures: !<uint32_t> 0 # 0x00000000
+  FtrMultiRenderTarget: !<uint32_t> 0 # 0x00000000
+  FtrHWTnL: !<uint32_t> 0 # 0x00000000
+  FtrOcclusionQuery: !<uint32_t> 0 # 0x00000000
+  FtrOcclusionQueryOGL: !<uint32_t> 0 # 0x00000000
+  FtrAutoGenMipMap: !<uint32_t> 0 # 0x00000000
+  FtrDX10Support: !<uint32_t> 1 # 0x00000001
+  FtrDX10_1Support: !<uint32_t> 1 # 0x00000001
+  FtrDX11_Xon10Support: !<uint32_t> 1 # 0x00000001
+  FtrDX11Support: !<uint32_t> 1 # 0x00000001
+  FtrDX11_1Support: !<uint32_t> 1 # 0x00000001
+  FtrWorkstation: !<uint32_t> 0 # 0x00000000
+  FtrEtcFormats: !<uint32_t> 1 # 0x00000001
+  FtrAstcLdr2D: !<uint32_t> 1 # 0x00000001
+  FtrAstcHdr2D: !<uint32_t> 1 # 0x00000001
+  FtrAstc3D: !<uint32_t> 1 # 0x00000001
+  FtrUmdThreadingShim: !<uint32_t> 0 # 0x00000000
+  FtrBoundingBoxOptOGL: !<uint32_t> 0 # 0x00000000
+  FtrResourceStreamerEnabled: !<uint32_t> 0 # 0x00000000
+  FtrHiZSamplerDisabled: !<uint32_t> 1 # 0x00000001
+  FtrDisableDX10IdleGpuFlushOnPresi: !<uint32_t> 0 # 0x00000000
+  FtrE2ECompressionOnGen11: !<uint32_t> 0 # 0x00000000
+  FtrEnableHardwareFilteringOfSemiPipelinedState: !<uint32_t> 0 # 0x00000000
+  FtrEfficientCombiningOfSubspans: !<uint32_t> 0 # 0x00000000
+  FtrIsCCSAllowedWithoutMSAAComp: !<uint32_t> 0 # 0x00000000
+  FtrRangedFlush: !<uint32_t> 0 # 0x00000000
+  FtrURBReconfigure: !<uint32_t> 0 # 0x00000000
+  FtrHWManagedZClearValue: !<uint32_t> 0 # 0x00000000
+  FtrHSPatchCountThreshold: !<uint32_t> 1 # 0x00000001
+  FtrPartialDepthResolveSupport: !<uint32_t> 1 # 0x00000001
+  FtrTBIMR: !<uint32_t> 1 # 0x00000001
+  FtrRayTracing: !<uint32_t> 1 # 0x00000001
+  FtrEnhancedL3Control: !<uint32_t> 1 # 0x00000001
+  FtrVariableRateShading: !<uint32_t> 1 # 0x00000001
+  FtrMeshShading: !<uint32_t> 1 # 0x00000001
+  FtrLowQualityFilterAllowed: !<uint32_t> 0 # 0x00000000
+  Ftr1MbGPUVAAlignment: !<uint32_t> 0 # 0x00000000
+  FtrAllowSIMD32ForCPSWithCPSize1x1: !<uint32_t> 0 # 0x00000000
+  FtrAtomicInt64OnDescriptorHeapResource: !<uint32_t> 1 # 0x00000001
+  FtrMeshShaderWritingShadingRate: !<uint32_t> 1 # 0x00000001
+  FtrFramePacing: !<uint32_t> 0 # 0x00000000
+  FtrNativeDX9: !<uint32_t> 0 # 0x00000000
+  FtrExecuteIndirectHwLoopUnroll: !<uint32_t> 1 # 0x00000001
+  FtrGameCompatibilityProfiles: !<uint32_t> 1 # 0x00000001
+  FtrInvalidateAsPostSync: !<uint32_t> 0 # 0x00000000
+  FtrImprovedClipDistandFastCull: !<uint32_t> 0 # 0x00000000
+  FtrMSAAFastClear: !<uint32_t> 0 # 0x00000000
+  FtrSamplerEnableProgrammableOffsets: !<uint32_t> 0 # 0x00000000
+  FtrTightAlignment: !<uint32_t> 1 # 0x00000001
+  FtrProgrammableSamplePositionsTier2: !<uint32_t> 0 # 0x00000000
+  FtrGfxSkuClassWorkstation: !<uint32_t> 0 # 0x00000000
+  FtrSelectXeCoreArbitrationScheme: !<uint32_t> 0 # 0x00000000
+  Ftr16bppDepthFastClearFor16x16Hash: !<uint32_t> 0 # 0x00000000
+  FtrAdditionalRegPerThreadMode: !<uint32_t> 0 # 0x00000000
+  FtrKsp1RegistersPerThread: !<uint32_t> 0 # 0x00000000
+  FtrRTStackIdControlIntermediateValues: !<uint32_t> 0 # 0x00000000
+  FtrDriverBasedFG: !<uint32_t> 0 # 0x00000000
+  FtrHwFilteringSemiPipelinedStateInWm: !<uint32_t> 0 # 0x00000000
+  FTrEnableAIParameterCombiningWithLODBias: !<uint32_t> 0 # 0x00000000
+  FtrDPASSupported: !<uint32_t> 0 # 0x00000000
+  FtrReadSuppressionDisable: !<uint32_t> 0 # 0x00000000
+  FtrAdvancedTextureOpsSupported: !<uint32_t> 1 # 0x00000001
+  FtrWriteableMSAATexturesSupported: !<uint32_t> 0 # 0x00000000
+  FtrNondeterministicTGMLoadData: !<uint32_t> 0 # 0x00000000
+  FtrPM: !<uint32_t> 1 # 0x00000001
+  FtrD1: !<uint32_t> 0 # 0x00000000
+  FtrWaitWake: !<uint32_t> 1 # 0x00000001
+  FtrPwrCons: !<uint32_t> 1 # 0x00000001
+  FtrCxSR: !<uint32_t> 1 # 0x00000001
+  FtrFbc: !<uint32_t> 0 # 0x00000000
+  FtrFbc2AddressTranslation: !<uint32_t> 1 # 0x00000001
+  FtrFbcBlitterTracking: !<uint32_t> 1 # 0x00000001
+  FtrFbcPsr2Coexistence: !<uint32_t> 0 # 0x00000000
+  FbcSelectiveFetchSupport: !<uint32_t> 0 # 0x00000000
+  FtrFbcSupportForFP16Format: !<uint32_t> 0 # 0x00000000
+  FtrFbcComputeCfbBasedOnFbcStride: !<uint32_t> 1 # 0x00000001
+  FbcSupportForCustomTarget: !<uint32_t> 1 # 0x00000001
+  FtrSupportSystemCacheForFbc: !<uint32_t> 0 # 0x00000000
+  FtrDynamicFbcBufferAllocation: !<uint32_t> 0 # 0x00000000
+  FtrDps: !<uint32_t> 0 # 0x00000000
+  FtrSupportCuiDrrsFeature: !<uint32_t> 0 # 0x00000000
+  FtrDisablePixelClockBasedDpsOnMultiEdp: !<uint32_t> 0 # 0x00000000
+  FtrInternalDisplayDmrrs: !<uint32_t> 0 # 0x00000000
+  FtrUbrr2_0: !<uint32_t> 0 # 0x00000000
+  FtrQuickDrrsSupported: !<uint32_t> 0 # 0x00000000
+  FtrCursorSfsuSupported: !<uint32_t> 0 # 0x00000000
+  FtrXpst: !<uint32_t> 0 # 0x00000000
+  FtrDpstEnginePerPipe: !<uint32_t> 0 # 0x00000000
+  FtrDpst7_x_Support: !<uint32_t> 0 # 0x00000000
+  FtrTconBacklightOptimizationSupport: !<uint32_t> 1 # 0x00000001
+  FtrSourceSideDitheringSupported: !<uint32_t> 1 # 0x00000001
+  FtrElpSupport: !<uint32_t> 1 # 0x00000001
+  FtrPixOptixSupport: !<uint32_t> 1 # 0x00000001
+  FtrApdSupport: !<uint32_t> 1 # 0x00000001
+  FtrFullScreenSolidColorSupport: !<uint32_t> 1 # 0x00000001
+  FtrOpst1_1_Support: !<uint32_t> 1 # 0x00000001
+  FtrDpst8_x_Support: !<uint32_t> 1 # 0x00000001
+  FtrDpst9_x_Support: !<uint32_t> 0 # 0x00000000
+  FtrDpstDynamicContrastEnhancement: !<uint32_t> 0 # 0x00000000
+  FtrXpstCabcSupport: !<uint32_t> 0 # 0x00000000
+  FtrXpstHwAssistedPhaseInSupport: !<uint32_t> 0 # 0x00000000
+  FtrOpst2_0_Support: !<uint32_t> 0 # 0x00000000
+  FtrSmartPowerHdrSupport: !<uint32_t> 0 # 0x00000000
+  FtrEdpPanelOverdrive: !<uint32_t> 0 # 0x00000000
+  FtrGhe: !<uint32_t> 0 # 0x00000000
+  FtrDisplayLace: !<uint32_t> 0 # 0x00000000
+  FtrDisplayLaceTriggerSupported: !<uint32_t> 1 # 0x00000001
+  FtrBlc: !<uint32_t> 0 # 0x00000000
+  FtrBlcSmoothTransition: !<uint32_t> 0 # 0x00000000
+  FtrBlcAssertiveDisplay: !<uint32_t> 0 # 0x00000000
+  FtrDisableBrightness3DdiSupport: !<uint32_t> 0 # 0x00000000
+  FtrIndependentBrightnessControl: !<uint32_t> 1 # 0x00000001
+  FtrAcpiBrightnessControlPortOverride: !<uint32_t> 0 # 0x00000000
+  FtrVesaBrightnessControlSupport: !<uint32_t> 0 # 0x00000000
+  FtrSupportCustomAuxBrightnessOnEdp1_5: !<uint32_t> 0 # 0x00000000
+  FtrUncalibratedBrightness3Support: !<uint32_t> 0 # 0x00000000
+  FtrLhdmDxvaNotifications: !<uint32_t> 0 # 0x00000000
+  FtrDppe: !<uint32_t> 0 # 0x00000000
+  FtrLPSP: !<uint32_t> 0 # 0x00000000
+  FtrVEBOX: !<uint32_t> 1 # 0x00000001
+  FtrForceWake: !<uint32_t> 1 # 0x00000001
+  FtrForceWakeMMIOWrite: !<uint32_t> 1 # 0x00000001
+  FtrDecoupledMMIO: !<uint32_t> 0 # 0x00000000
+  FtrMediaTurboMode: !<uint32_t> 0 # 0x00000000
+  FtrGsvTurbo: !<uint32_t> 1 # 0x00000001
+  FtrGsvDynamicOverclocking: !<uint32_t> 0 # 0x00000000
+  FtrGsvRingFreqScaling: !<uint32_t> 0 # 0x00000000
+  FtrGsvCrl: !<uint32_t> 0 # 0x00000000
+  FtrGsvIntelligentBiasControl: !<uint32_t> 0 # 0x00000000
+  FtrGsvScenarioBasedBiasControl: !<uint32_t> 0 # 0x00000000
+  FtrGsvEfficientMinFreq: !<uint32_t> 1 # 0x00000001
+  FtrWeightsProgrammedByDriver: !<uint32_t> 0 # 0x00000000
+  FtrGsvBurstWorkloadTurbo: !<uint32_t> 0 # 0x00000000
+  FtrGsvSliceUnsliceThrottle: !<uint32_t> 0 # 0x00000000
+  FtrGsvOclBoost: !<uint32_t> 1 # 0x00000001
+  FtrGsvMdfBoost: !<uint32_t> 1 # 0x00000001
+  FtrGsvDxComputeBoost: !<uint32_t> 1 # 0x00000001
+  FtrAsyncMMIOTurbo: !<uint32_t> 1 # 0x00000001
+  FtrCommandThrottlePolicy: !<uint32_t> 1 # 0x00000001
+  FtrIAFreqCapping: !<uint32_t> 0 # 0x00000000
+  FtrTurboV2: !<uint32_t> 1 # 0x00000001
+  FtrDptf: !<uint32_t> 0 # 0x00000000
+  FtrCLOS: !<uint32_t> 0 # 0x00000000
+  FtrRS: !<uint32_t> 1 # 0x00000001
+  FtrRsCoarsePowerGating: !<uint32_t> 1 # 0x00000001
+  FtrRsMediaSubEngineForceWake: !<uint32_t> 1 # 0x00000001
+  FtrRsMediaSamplerPowerGating: !<uint32_t> 0 # 0x00000000
+  FtrRsMediaSubpipePowerGating: !<uint32_t> 1 # 0x00000001
+  FtrSysman: !<uint32_t> 1 # 0x00000001
+  FtrSliceShutdown: !<uint32_t> 0 # 0x00000000
+  FtrSSEUPowerGating: !<uint32_t> 0 # 0x00000000
+  FtrSSEUPowerGatingControlByUMD: !<uint32_t> 0 # 0x00000000
+  FtrPsr: !<uint32_t> 1 # 0x00000001
+  FtrPsrSu: !<uint32_t> 1 # 0x00000001
+  FtrPsr2DrrsCoexistence: !<uint32_t> 1 # 0x00000001
+  FtrVTotalBasedLrrSupport: !<uint32_t> 1 # 0x00000001
+  FtrPsrSuSupportOnDualPipe: !<uint32_t> 0 # 0x00000000
+  FtrPsrSuSdpTransLineConfig: !<uint32_t> 1 # 0x00000001
+  FtrLrrDynamicDpcdSupport: !<uint32_t> 1 # 0x00000001
+  FtrSwSfsuDpstHandling: !<uint32_t> 1 # 0x00000001
+  FtrNoEarlyFrameCaptureIndicationSupport: !<uint32_t> 0 # 0x00000000
+  FtrSffViaManTrackCtl: !<uint32_t> 1 # 0x00000001
+  FtrFpsTracking: !<uint32_t> 1 # 0x00000001
+  FtrDfps: !<uint32_t> 0 # 0x00000000
+  FtrCappedFps: !<uint32_t> 1 # 0x00000001
+  FtrDcc: !<uint32_t> 1 # 0x00000001
+  FtrDct: !<uint32_t> 0 # 0x00000000
+  FtrIps: !<uint32_t> 0 # 0x00000000
+  FtrWriteMCHRegsViaPcu: !<uint32_t> 0 # 0x00000000
+  FtrSLPM: !<uint32_t> 1 # 0x00000001
+  FtrRealTimeWLBoost: !<uint32_t> 1 # 0x00000001
+  FtrGUCRC: !<uint32_t> 1 # 0x00000001
+  FtrDcStates: !<uint32_t> 1 # 0x00000001
+  FtrDisplayPowerwell: !<uint32_t> 1 # 0x00000001
+  FtrEdpSkipPpsCycleForModifiedTiming: !<uint32_t> 0 # 0x00000000
+  FtrSkipPpsDisablePrebootDisplaysInS4Resume: !<uint32_t> 0 # 0x00000000
+  FtrEdpSkipPwmNotSupported: !<uint32_t> 1 # 0x00000001
+  FtrSDVOPowerDown: !<uint32_t> 0 # 0x00000000
+  FtrDisableHdcp1_x: !<uint32_t> 0 # 0x00000000
+  FtrPF2Available: !<uint32_t> 0 # 0x00000000
+  FtrXVYCCSupported: !<uint32_t> 0 # 0x00000000
+  FtrESFVP: !<uint32_t> 0 # 0x00000000
+  FtrSingleComboPhySku: !<uint32_t> 0 # 0x00000000
+  FtrDisplayNV12: !<uint32_t> 1 # 0x00000001
+  FtrDisplayYUY2: !<uint32_t> 1 # 0x00000001
+  FtrDisplayP010: !<uint32_t> 0 # 0x00000000
+  FtrDisplayYUY2Scaling: !<uint32_t> 1 # 0x00000001
+  FtrDisplayNV12Scaling: !<uint32_t> 1 # 0x00000001
+  FtrFlipImmediateOnHSync: !<uint32_t> 1 # 0x00000001
+  FtrDelayForTypeCTBTDisplays: !<uint32_t> 0 # 0x00000000
+  FtrGammaRegisterWriteUsingDsb: !<uint32_t> 1 # 0x00000001
+  FtrHdmiTmdsMaxDataRateSupportPerSpec: !<uint32_t> 1 # 0x00000001
+  FtrUseFlipInterfaceForPostDisplay: !<uint32_t> 1 # 0x00000001
+  FtrUseFlipInterfaceForVisibilityOff: !<uint32_t> 1 # 0x00000001
+  FtrDPYUV420PixelEncodingSupported: !<uint32_t> 1 # 0x00000001
+  Ftr128b132bSupported: !<uint32_t> 1 # 0x00000001
+  FtrUsb4DisplayReporting: !<uint32_t> 1 # 0x00000001
+  FtrDelayedDpDetectionPostResume: !<uint32_t> 0 # 0x00000000
+  FtrAsyncDetectionEnable: !<uint32_t> 0 # 0x00000000
+  FtrLpDpSupport: !<uint32_t> 0 # 0x00000000
+  FtrEnableDC5DC6: !<uint32_t> 0 # 0x00000000
+  FtrEnableDC5: !<uint32_t> 1 # 0x00000001
+  FtrEnableDC6v: !<uint32_t> 0 # 0x00000000
+  FtrEnableDC3Co: !<uint32_t> 0 # 0x00000000
+  FtrEnableDC6: !<uint32_t> 1 # 0x00000001
+  FtrEnableDC9: !<uint32_t> 1 # 0x00000001
+  FtrDeepPkgC8: !<uint32_t> 0 # 0x00000000
+  FtrEnableDCStateinPSR: !<uint32_t> 1 # 0x00000001
+  FtrRendComp: !<uint32_t> 1 # 0x00000001
+  FtrClearColor: !<uint32_t> 0 # 0x00000000
+  FtrMediaComp: !<uint32_t> 1 # 0x00000001
+  FtrDisplayYTiling: !<uint32_t> 0 # 0x00000000
+  FtrDisplay4TilingSupport: !<uint32_t> 1 # 0x00000001
+  FtrNNScalingSupport: !<uint32_t> 1 # 0x00000001
+  FtrEnableDisplayableSupport: !<uint32_t> 1 # 0x00000001
+  FtrKmdHdcp2Protocol: !<uint32_t> 1 # 0x00000001
+  FtrWinDoD: !<uint32_t> 0 # 0x00000000
+  FtrEnableHDRSupport: !<uint32_t> 1 # 0x00000001
+  FtrEnableOSHDR: !<uint32_t> 0 # 0x00000000
+  FtrHdrFP16ScanoutSupport: !<uint32_t> 1 # 0x00000001
+  FtrHdrARGB10ScanoutSupport: !<uint32_t> 0 # 0x00000000
+  FtrOSHdr10MetadataPolicySupported: !<uint32_t> 1 # 0x00000001
+  FtrHdrStaticMetadataViaVscExtSdpSupported: !<uint32_t> 1 # 0x00000001
+  FtrEscapeOverrideEncodingBpc: !<uint32_t> 1 # 0x00000001
+  FtrOsWcgSupported: !<uint32_t> 1 # 0x00000001
+  FtrDisableOsWcgForLfp: !<uint32_t> 0 # 0x00000000
+  FtrForceEnableLfpDithering: !<uint32_t> 0 # 0x00000000
+  FtrVRR: !<uint32_t> 1 # 0x00000001
+  FtrVrrDcBalanceHwSupport: !<uint32_t> 0 # 0x00000000
+  FtrDisableHwDcbForEdp: !<uint32_t> 0 # 0x00000000
+  FtrVrrPCodeSupport: !<uint32_t> 0 # 0x00000000
+  FtrCmrr: !<uint32_t> 0 # 0x00000000
+  FtrClockBasedRrSwitching: !<uint32_t> 1 # 0x00000001
+  FtrDisableBoostedFrameRate: !<uint32_t> 0 # 0x00000000
+  FtrPsrSupportWithVrrInFixedMode: !<uint32_t> 1 # 0x00000001
+  FtrPsrSupportWithVrrInVariableMode: !<uint32_t> 0 # 0x00000000
+  FtrSupportClockBasedRrSwitchingWithoutMultiPixelClocks: !<uint32_t> 0 # 0x00000000
+  FtrExternalDisplayDps: !<uint32_t> 0 # 0x00000000
+  FtrYCBCRSupported: !<uint32_t> 0 # 0x00000000
+  FtrForceRgbFullRange: !<uint32_t> 0 # 0x00000000
+  FtrPipeJoining: !<uint32_t> 1 # 0x00000001
+  FtrUncompressedTwoPipeJoiner: !<uint32_t> 1 # 0x00000001
+  FtrDpVscSdpChaining: !<uint32_t> 1 # 0x00000001
+  Ftr3DLUTSupportInPipeB: !<uint32_t> 1 # 0x00000001
+  Ftr3dLutDmcRestore: !<uint32_t> 1 # 0x00000001
+  FtrSharedGfxPowerComponent: !<uint32_t> 0 # 0x00000000
+  Ftr8kModeSupport: !<uint32_t> 1 # 0x00000001
+  FtrOSManualTrackingSupport: !<uint32_t> 1 # 0x00000001
+  FtrPsr2SelectiveFetchSupport: !<uint32_t> 1 # 0x00000001
+  FtrPsr2EarlyTransportSupport: !<uint32_t> 0 # 0x00000000
+  FtrDpPanelReplaySupport: !<uint32_t> 0 # 0x00000000
+  FtrPanelReplaySelectiveUpdateSupport: !<uint32_t> 0 # 0x00000000
+  FtrPsr2VdscCoexistance: !<uint32_t> 1 # 0x00000001
+  FtrHWFlipQSupport: !<uint32_t> 1 # 0x00000001
+  FtrWakelockSupport: !<uint32_t> 0 # 0x00000000
+  FtrFlipQSupport: !<uint32_t> 0 # 0x00000000
+  FtrOsUnawareFlipQSupport: !<uint32_t> 1 # 0x00000001
+  FtrDisplayEngineToneMappingSupport: !<uint32_t> 0 # 0x00000000
+  FtrSimpleFlipQSupport: !<uint32_t> 1 # 0x00000001
+  FtrSWFlipQSupport: !<uint32_t> 0 # 0x00000000
+  FtrFlipQRegMap: !<uint32_t> 0 # 0x00000000
+  FtrFlipQPtsBasedTriggerSupport: !<uint32_t> 0 # 0x00000000
+  FtrSwBasedMinDbufForAsyncFlips: !<uint32_t> 1 # 0x00000001
+  FtrEnduranceGaming: !<uint32_t> 1 # 0x00000001
+  FtrPMAStdSupport: !<uint32_t> 1 # 0x00000001
+  FtrNeedWaitForFlipDone: !<uint32_t> 1 # 0x00000001
+  FtrCenteredScalingSupport: !<uint32_t> 0 # 0x00000000
+  FtrEdidManagement: !<uint32_t> 0 # 0x00000000
+  FtrFlipQVbiOptimization: !<uint32_t> 1 # 0x00000001
+  FtrPipeDmcFlipQInterrupt: !<uint32_t> 0 # 0x00000000
+  FtrOsFlipQAsStable: !<uint32_t> 0 # 0x00000000
+  FtrOsFlipQAlwaysOn: !<uint32_t> 1 # 0x00000001
+  FtrLobf: !<uint32_t> 0 # 0x00000000
+  FtrEdpPanelReplaySupport: !<uint32_t> 0 # 0x00000000
+  FtrEdpPeriodicAsSdpDmcSupport: !<uint32_t> 0 # 0x00000000
+  FtrEdpPeriodicAsSdpHwSupport: !<uint32_t> 0 # 0x00000000
+  FtrSkipPhyOwnerReleaseInStopDevice: !<uint32_t> 0 # 0x00000000
+  FtrModularIOCardSupport: !<uint32_t> 0 # 0x00000000
+  FtrPipeDMCFrameTSSupport: !<uint32_t> 0 # 0x00000000
+  FtrXeFGSupport: !<uint32_t> 1 # 0x00000001
+  FtrSkipPipeSwap: !<uint32_t> 0 # 0x00000000
+  FtrPipeAllocationOptimization: !<uint32_t> 1 # 0x00000001
+  FtrOsMdmSupport: !<uint32_t> 0 # 0x00000000
+  FtrVbiBasedDcBalanceCorrection: !<uint32_t> 0 # 0x00000000
+  FtrNumEdidBlocksToReportToOs: !<uint32_t> 4 # 0x00000004
+  FtrExtDpAlpmSupport: !<uint32_t> 0 # 0x00000000
+  FtrDpPrEarlyTransportSupport: !<uint32_t> 0 # 0x00000000
+  FtrHwUnderrunDebuggability: !<uint32_t> 0 # 0x00000000
+  FtrPtsInterruptBasedSwQ: !<uint32_t> 0 # 0x00000000
+  FtrDucSupport: !<uint32_t> 0 # 0x00000000
+  FtrLegacyGmbusSupportWithMax511ByteTransfer: !<uint32_t> 1 # 0x00000001
+  FtrMediaDisable: !<uint32_t> 0 # 0x00000000
+  Ftr3DIndirectLoad: !<uint32_t> 0 # 0x00000000
+  Ftr1080pPlusDecoding: !<uint32_t> 1 # 0x00000001
+  FtrNV12: !<uint32_t> 1 # 0x00000001
+  FtrAVCMCDecoding: !<uint32_t> 0 # 0x00000000
+  FtrAVCITDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelAVCVLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrAVCFGTDecoding: !<uint32_t> 0 # 0x00000000
+  FtrStatusReporting: !<uint32_t> 1 # 0x00000001
+  FtrAVCVLDLongDecoding: !<uint32_t> 1 # 0x00000001
+  FtrAVCVLDShortDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelAVCVLDHigh422Decoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelMVCShortDecoding: !<uint32_t> 1 # 0x00000001
+  FtrMVCVLDDecoding: !<uint32_t> 1 # 0x00000001
+  FtrWMV9MCDecoding: !<uint32_t> 0 # 0x00000000
+  FtrWMV9ITDecoding: !<uint32_t> 0 # 0x00000000
+  FtrVC1MCDecoding: !<uint32_t> 0 # 0x00000000
+  FtrVC1ITDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelVC1VLDAdvancedDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelVC1VLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrVC1VLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrMPEG2MCDecoding: !<uint32_t> 0 # 0x00000000
+  FtrMPEG2IDCTDecoding: !<uint32_t> 1 # 0x00000001
+  FtrMPEG2VLDDecoding: !<uint32_t> 1 # 0x00000001
+  FtrVP8VLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelVP8VLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelHEVCVLDMainDecoding: !<uint32_t> 1 # 0x00000001
+  FtrHEVCVLDMainShortDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain10Decoding: !<uint32_t> 1 # 0x00000001
+  FtrHEVCVLDMain10ShortDecoding: !<uint32_t> 1 # 0x00000001
+  FtrDecodeHEVC422VTScalaDisable: !<uint32_t> 0 # 0x00000000
+  FtrIntelHEVCVLD42210bitDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLD4448bitDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLD44410bitDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMainIntraDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain10IntraDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain12bit420Decoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain12bit422Decoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain12bit444Decoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain8bit420SCC: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain10bit420SCC: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain8bit444SCC: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDMain10bit444SCC: !<uint32_t> 1 # 0x00000001
+  FtrIntelHEVCVLDDecodingSubsetBuffer: !<uint32_t> 1 # 0x00000001
+  FtrIntelHybridHEVCVLDMainDecoding: !<uint32_t> 0 # 0x00000000
+  FtrHybridHEVCVLDMainShortDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelHybridHEVCVLDMain10Decoding: !<uint32_t> 0 # 0x00000000
+  FtrHybridHEVCVLDMain10ShortDecoding: !<uint32_t> 0 # 0x00000000
+  FtrHybridHEVCSliceShutdownEnable: !<uint32_t> 0 # 0x00000000
+  FtrIntelVP9VLDProfile0Decoding8bit420: !<uint32_t> 1 # 0x00000001
+  FtrVP9VLDDecoding: !<uint32_t> 1 # 0x00000001
+  FtrVP9VLD10bProfile2Decoding: !<uint32_t> 1 # 0x00000001
+  FtrHybridIntelVP9VLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelVP9VLDProfile1Decoding8bit444: !<uint32_t> 1 # 0x00000001
+  FtrIntelVP9VLDProfile2Decoding10bit420: !<uint32_t> 1 # 0x00000001
+  FtrIntelVP9VLDProfile3Decoding10bit444: !<uint32_t> 1 # 0x00000001
+  FtrIntelVP9VLDProfile2Decoding12bit420: !<uint32_t> 1 # 0x00000001
+  FtrIntelVP9VLDProfile3Decoding12bit444: !<uint32_t> 1 # 0x00000001
+  FtrHybridVP9SliceShutdownEnable: !<uint32_t> 0 # 0x00000000
+  FtrAV1VLDProfile0Decoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelAV1VLDDecoding8bit420: !<uint32_t> 1 # 0x00000001
+  FtrIntelAV1VLDDecoding10bit420: !<uint32_t> 1 # 0x00000001
+  FtrAV1VLDProfile1Decoding8bit444: !<uint32_t> 0 # 0x00000000
+  FtrAV1VLDProfile1Decoding10bit444: !<uint32_t> 0 # 0x00000000
+  FtrAV1VLDProfile2Decoding8bit422: !<uint32_t> 0 # 0x00000000
+  FtrAV1VLDProfile2Decoding10bit422: !<uint32_t> 0 # 0x00000000
+  FtrAV1VLDLSTDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelVVCVLDDecodingMain10: !<uint32_t> 0 # 0x00000000
+  FtrIntelVVCVLDDecodingMultilayerMain10: !<uint32_t> 0 # 0x00000000
+  FtrMPEG2Deblocking: !<uint32_t> 1 # 0x00000001
+  FtrMPEG2ErrorConcealment: !<uint32_t> 1 # 0x00000001
+  FtrIntelJPEGDecoding: !<uint32_t> 1 # 0x00000001
+  FtrIntelJPEGXSDecodingBayer: !<uint32_t> 0 # 0x00000000
+  FtrIntelJPEGXSDecoding12bit422: !<uint32_t> 0 # 0x00000000
+  FtrIntelJPEGXSDecoding12bit444: !<uint32_t> 0 # 0x00000000
+  FtrIntelVC3DecodingNoAlpha: !<uint32_t> 0 # 0x00000000
+  FtrIntelVC3DecodingLossyAlpha: !<uint32_t> 0 # 0x00000000
+  FtrIntelVC3DecodingLossLessAlpha: !<uint32_t> 0 # 0x00000000
+  FtrIntelMpeg4VLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrIntelAvsVLDDecoding: !<uint32_t> 0 # 0x00000000
+  FtrDecodeSync: !<uint32_t> 1 # 0x00000001
+  FtrProcAmpControl: !<uint32_t> 1 # 0x00000001
+  FtrFilmModeDetection: !<uint32_t> 1 # 0x00000001
+  FtrJPEGVLDDecoding: !<uint32_t> 1 # 0x00000001
+  FtrReserved0: !<uint32_t> 0 # 0x00000000
+  FtrDetailFilter: !<uint32_t> 0 # 0x00000000
+  FtrHDDVDCompositing: !<uint32_t> 1 # 0x00000001
+  FtrNLAScaling: !<uint32_t> 1 # 0x00000001
+  FtrNoPerSurfaceTiling: !<uint32_t> 0 # 0x00000000
+  FtrPAVP: !<uint32_t> 1 # 0x00000001
+  FtrPAVPSerpent: !<uint32_t> 1 # 0x00000001
+  FtrPAVP2VDBox: !<uint32_t> 0 # 0x00000000
+  FtrPAVPWinWidevine: !<uint32_t> 1 # 0x00000001
+  FtrPAVPCBCSMode: !<uint32_t> 1 # 0x00000001
+  FtrTranscodeAvcInHeavyMode: !<uint32_t> 0 # 0x00000000
+  FtrTranscodeMpeg2InHeavyMode: !<uint32_t> 0 # 0x00000000
+  FtrPAVPAllowAllSessions: !<uint32_t> 1 # 0x00000001
+  FtrPAVPIsolatedDecode: !<uint32_t> 1 # 0x00000001
+  FtrHWCounterAutoIncrementSupport: !<uint32_t> 1 # 0x00000001
+  FtrPAVPStout: !<uint32_t> 1 # 0x00000001
+  FtrPAVPStoutTranscode: !<uint32_t> 1 # 0x00000001
+  FtrPAVPSeb: !<uint32_t> 0 # 0x00000000
+  FtrPAVPLiteModeHucStreamoutDisabled: !<uint32_t> 0 # 0x00000000
+  FtrPAVPDX9: !<uint32_t> 0 # 0x00000000
+  FtrCencDecodeRemove2ndLevelBatchBufferCopy: !<uint32_t> 0 # 0x00000000
+  FtrHDProcAmp: !<uint32_t> 1 # 0x00000001
+  Ftr3DMediaDefeature: !<uint32_t> 0 # 0x00000000
+  FtrVC1NV12: !<uint32_t> 0 # 0x00000000
+  FtrMPEG2NV12: !<uint32_t> 0 # 0x00000000
+  FtrDynamicLinking: !<uint32_t> 1 # 0x00000001
+  FtrFFDNFilter: !<uint32_t> 1 # 0x00000001
+  FtrFFDIFilter: !<uint32_t> 1 # 0x00000001
+  FtrDNUVFilter: !<uint32_t> 0 # 0x00000000
+  FtrAVScaling: !<uint32_t> 1 # 0x00000001
+  FtrIEFilter: !<uint32_t> 1 # 0x00000001
+  FtrHDIEFilter: !<uint32_t> 1 # 0x00000001
+  FtrNestedBatchBuffer: !<uint32_t> 1 # 0x00000001
+  FtrHDEnhancedProcessing: !<uint32_t> 0 # 0x00000000
+  FtrEncodeAVC: !<uint32_t> 1 # 0x00000001
+  FtrEncodeAVCVdenc: !<uint32_t> 1 # 0x00000001
+  FtrEncodeAVCVdenc42210b: !<uint32_t> 0 # 0x00000000
+  FtrEncode16xME: !<uint32_t> 0 # 0x00000000
+  FtrEncodeMPEG2: !<uint32_t> 0 # 0x00000000
+  FtrEncodeMPEG2Enc: !<uint32_t> 0 # 0x00000000
+  FtrEncodeVP8: !<uint32_t> 0 # 0x00000000
+  FtrEncodeVP9HybridPAK: !<uint32_t> 0 # 0x00000000
+  FtrEncodeJPEG: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVC: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain10: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVC10bit: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVC10bit422: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVC12bit: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVC12bit422: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVC444: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVC10bit444: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain422: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain10bit422: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain444: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain10bit444: !<uint32_t> 1 # 0x00000001
+  FtrDecodeOutputSync: !<uint32_t> 1 # 0x00000001
+  FtrCPFilter: !<uint32_t> 1 # 0x00000001
+  FtrGamutExpansionMedia: !<uint32_t> 0 # 0x00000000
+  FtrGamutCompressionMedia: !<uint32_t> 1 # 0x00000001
+  FtrPreprocessing: !<uint32_t> 1 # 0x00000001
+  FtrFastCopyInterface: !<uint32_t> 1 # 0x00000001
+  FtrCompositingRate30fps: !<uint32_t> 0 # 0x00000000
+  FtrVFEWalker: !<uint32_t> 1 # 0x00000001
+  FtrConcurrentMultiSliceEncode: !<uint32_t> 0 # 0x00000000
+  FtrFrameRateConversion24p60p: !<uint32_t> 0 # 0x00000000
+  FtrFrameRateConversion30p60p: !<uint32_t> 0 # 0x00000000
+  FtrFrameRateConversionFullHD: !<uint32_t> 0 # 0x00000000
+  FtrIStabAffineFilter: !<uint32_t> 0 # 0x00000000
+  FtrIStabFilter: !<uint32_t> 0 # 0x00000000
+  FtrS3D: !<uint32_t> 1 # 0x00000001
+  FtrDisplayEngineS3d: !<uint32_t> 1 # 0x00000001
+  FtrCm: !<uint32_t> 1 # 0x00000001
+  FtrDesktopScreen: !<uint32_t> 1 # 0x00000001
+  Ftr3pPlugin: !<uint32_t> 0 # 0x00000000
+  FtrHalfSliceSelect: !<uint32_t> 0 # 0x00000000
+  FtrEncodeAVCMBBRC: !<uint32_t> 1 # 0x00000001
+  FtrCapturePipe: !<uint32_t> 1 # 0x00000001
+  FtrLensCorrectionFilter: !<uint32_t> 1 # 0x00000001
+  FtrHwSupportForFieldSeqS3D: !<uint32_t> 1 # 0x00000001
+  FtrSFCPipe: !<uint32_t> 1 # 0x00000001
+  FtrHCP2SFCPipe: !<uint32_t> 1 # 0x00000001
+  FtrAVP2SFCPipe: !<uint32_t> 1 # 0x00000001
+  FtrSFCHistogramStreamOut: !<uint32_t> 1 # 0x00000001
+  FtrDisableVDBox2SFC: !<uint32_t> 1 # 0x00000001
+  FtrDisableVEBoxFeatures: !<uint32_t> 0 # 0x00000000
+  FtrLace: !<uint32_t> 1 # 0x00000001
+  FtrFDFB: !<uint32_t> 1 # 0x00000001
+  FtrRowstoreCachingEnabled: !<uint32_t> 0 # 0x00000000
+  FtrConditionalBatchBuffEnd: !<uint32_t> 0 # 0x00000000
+  FtrMemoryCompression: !<uint32_t> 0 # 0x00000000
+  FtrEnableMediaKernels: !<uint32_t> 1 # 0x00000001
+  FtrLegacyMediaKernelLoading: !<uint32_t> 0 # 0x00000000
+  FtrPPGTTBasedHuCLoad: !<uint32_t> 0 # 0x00000000
+  FtrSliceShutdownOverride: !<uint32_t> 0 # 0x00000000
+  FtrEncodeFlatnessCheck: !<uint32_t> 1 # 0x00000001
+  FtrEncodeMAD: !<uint32_t> 0 # 0x00000000
+  FtrVpDisableFor4K: !<uint32_t> 0 # 0x00000000
+  FtrVpDisableFor8K: !<uint32_t> 0 # 0x00000000
+  FtrMediaPatchless: !<uint32_t> 0 # 0x00000000
+  FtrReserved1: !<uint32_t> 0 # 0x00000000
+  FtrForceSCISupport: !<uint32_t> 0 # 0x00000000
+  FtrSingleVeboxSlice: !<uint32_t> 0 # 0x00000000
+  FtrMedia4KLace: !<uint32_t> 1 # 0x00000001
+  FtrHDR: !<uint32_t> 1 # 0x00000001
+  Ftr360Stitch: !<uint32_t> 0 # 0x00000000
+  FtrSuperResolution: !<uint32_t> 1 # 0x00000001
+  FtrSuperResolutionFor1080P: !<uint32_t> 0 # 0x00000000
+  FtrLutCompound: !<uint32_t> 0 # 0x00000000
+  FtrCompsitionMemoryCompressedOut: !<uint32_t> 1 # 0x00000001
+  FtrSegmentation: !<uint32_t> 0 # 0x00000000
+  Ftr10bitDecMemoryCompression: !<uint32_t> 0 # 0x00000000
+  FtrHcpDecMemoryCompression: !<uint32_t> 0 # 0x00000000
+  FtrSimulationMode: !<uint32_t> 0 # 0x00000000
+  FtrMPOBehaviorHints: !<uint32_t> 1 # 0x00000001
+  FtrVpP010Output: !<uint32_t> 1 # 0x00000001
+  FtrVp10BitSupport: !<uint32_t> 1 # 0x00000001
+  FtrPaletteRemove: !<uint32_t> 1 # 0x00000001
+  FtrVp16BitSupport: !<uint32_t> 1 # 0x00000001
+  FtrVpAYUVSupport: !<uint32_t> 1 # 0x00000001
+  FtrDNDisableFor4K: !<uint32_t> 0 # 0x00000000
+  FtrDisableVeboxDIScalar: !<uint32_t> 1 # 0x00000001
+  FtrSFC420LinearOutputSupport: !<uint32_t> 1 # 0x00000001
+  FtrSFCRGB24OutNoPadding: !<uint32_t> 0 # 0x00000000
+  FtrSFCRGBPRGB24OutputSupport: !<uint32_t> 1 # 0x00000001
+  FtrDisableRenderTargetWidthAdjust: !<uint32_t> 1 # 0x00000001
+  FtrAOTDRCSupport: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP9: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP9Vdenc: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP98bit444: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP9Vdenc8bit444: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP910bit420: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP9Vdenc10bit420: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP910bit444: !<uint32_t> 1 # 0x00000001
+  FtrEncodeVP9Vdenc10bit444: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMainSCC: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain10bitSCC: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain444SCC: !<uint32_t> 1 # 0x00000001
+  FtrEncodeHEVCVdencMain10bit444SCC: !<uint32_t> 1 # 0x00000001
+  FtrEnableLogDumpToFile: !<uint32_t> 0 # 0x00000000
+  FtrEncodeMFE: !<uint32_t> 0 # 0x00000000
+  FtrEnableCPHS: !<uint32_t> 0 # 0x00000000
+  FtrHeciDriverDirectComm: !<uint32_t> 0 # 0x00000000
+  FtrDisableDrDb: !<uint32_t> 0 # 0x00000000
+  FtrDisableDIADI: !<uint32_t> 0 # 0x00000000
+  FtrEncodeAV1Vdenc8bit420: !<uint32_t> 1 # 0x00000001
+  FtrEncodeAV1Vdenc10bit420: !<uint32_t> 1 # 0x00000001
+  FtrEncodeAV1Vdenc8bit444: !<uint32_t> 0 # 0x00000000
+  FtrEncodeAV1Vdenc10bit444: !<uint32_t> 0 # 0x00000000
+  FtrEncodeAV1Vdenc8bit422: !<uint32_t> 0 # 0x00000000
+  FtrEncodeAV1Vdenc10bit422: !<uint32_t> 0 # 0x00000000
+  FtrHeight8AlignVE3DLUTDualPipe: !<uint32_t> 0 # 0x00000000
+  FtrSWMediaReset: !<uint32_t> 0 # 0x00000000
+  FtrScalingFirst: !<uint32_t> 0 # 0x00000000
+  FtrEnablePPCFlush: !<uint32_t> 0 # 0x00000000
+  FtrSFCTargetRectangle: !<uint32_t> 0 # 0x00000000
+  FtrVpFP16: !<uint32_t> 0 # 0x00000000
+  FtrUnifiedMediaCopy: !<uint32_t> 1 # 0x00000001
+  FtrIntelVC3EncodingNoAlpha: !<uint32_t> 0 # 0x00000000
+  FtrIntelVC3EncodingLossyAlpha: !<uint32_t> 0 # 0x00000000
+  FtrIntelVC3EncodingLosslessAlpha: !<uint32_t> 0 # 0x00000000
+  FtrMeidaForceGpuVaMapByOs: !<uint32_t> 1 # 0x00000001
+  FtrLoadHucFwFromFile: !<uint32_t> 0 # 0x00000000
+  FtrSAMediaCachePolicy: !<uint32_t> 1 # 0x00000001
+  FtrPAVPLMemOnly: !<uint32_t> 1 # 0x00000001
+  FtrForceTile4: !<uint32_t> 0 # 0x00000000
+  FtrMediaNative9: !<uint32_t> 1 # 0x00000001
+  FtrIpaSupported: !<uint32_t> 0 # 0x00000000
+  FtrVDAQMHistogram: !<uint32_t> 0 # 0x00000000
+  Ftr3DSamplerRemoved: !<uint32_t> 0 # 0x00000000
+  FtrVideoFrameInterpolation: !<uint32_t> 0 # 0x00000000
+  FtrS2H: !<uint32_t> 0 # 0x00000000
+  FtrAVCd4ByteNALStartCodeSupport: !<uint32_t> 0 # 0x00000000
+  FtrMainCopyRemoved: !<uint32_t> 0 # 0x00000000
+  FtrLutCompoundTetrahedral: !<uint32_t> 0 # 0x00000000
+  FtrQT_Performance: !<uint32_t> 0 # 0x00000000
+  FtrWin7: !<uint32_t> 1 # 0x00000001
+  FtrWin8: !<uint32_t> 1 # 0x00000001
+  FtrWddm1_3: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_0: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_1: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_2: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_3: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_4: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_5: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_6: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_7: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_8: !<uint32_t> 1 # 0x00000001
+  FtrWddm2_9: !<uint32_t> 1 # 0x00000001
+  FtrWddm3_0: !<uint32_t> 1 # 0x00000001
+  FtrWddm3_1: !<uint32_t> 1 # 0x00000001
+  FtrWddm3_2: !<uint32_t> 1 # 0x00000001
+  FtrWddm3_3: !<uint32_t> 0 # 0x00000000
+  FtrIpuVersion_5_5: !<uint32_t> 0 # 0x00000000
+  FtrIpuVersion_6_0: !<uint32_t> 0 # 0x00000000
+  FtrGucBasedPavp: !<uint32_t> 1 # 0x00000001
+  FtrDisableRxSessionAutoTearDown: !<uint32_t> 0 # 0x00000000
+  FtrGuCDistributedDoorbell: !<uint32_t> 0 # 0x00000000
+  FtrGucPcieDoorbell: !<uint32_t> 1 # 0x00000001
+  FtrGuCDDBGT2LimitedConfig: !<uint32_t> 0 # 0x00000000
+  FtrEncryptedSysInfo: !<uint32_t> 1 # 0x00000001
+  FtrEnablePreemptionDataLogging: !<uint32_t> 0 # 0x00000000
+  FtrKmSecurityParser: !<uint32_t> 0 # 0x00000000
+  FtrOsManagedHwContext: !<uint32_t> 0 # 0x00000000
+  FtrIoMmuSecureModeSupported: !<uint32_t> 1 # 0x00000001
+  FtrDmaRemapSupported: !<uint32_t> 1 # 0x00000001
+  FtrEnableISPChild: !<uint32_t> 1 # 0x00000001
+  FtrEnableI2CChild: !<uint32_t> 0 # 0x00000000
+  FtrEnableCTAChild: !<uint32_t> 0 # 0x00000000
+  FtrEnablePMTChild: !<uint32_t> 1 # 0x00000001
+  FtrVgt: !<uint32_t> 0 # 0x00000000
+  FtrIsVF: !<uint32_t> 0 # 0x00000000
+  FtrSriovEnable: !<uint32_t> 0 # 0x00000000
+  Ftr3LevelLmtt: !<uint32_t> 0 # 0x00000000
+  FtrH2GSubmitContext: !<uint32_t> 0 # 0x00000000
+  FtrEngineGroupScheduling: !<uint32_t> 0 # 0x00000000
+  FtrVfDirectMmioAccess: !<uint32_t> 0 # 0x00000000
+  FtrOGLTexelOffsetPrecisionFix: !<uint32_t> 0 # 0x00000000
+  FtrRGBColorSeparation: !<uint32_t> 0 # 0x00000000
+  FtrEnableMissingAlpaFormatFilter: !<uint32_t> 0 # 0x00000000
+  FtrEnablePlanarYUVFilteringFix: !<uint32_t> 0 # 0x00000000
+  FtrEnableSCDCInterrupt: !<uint32_t> 0 # 0x00000000
+  FtrWiGigEnableLivePCRReporting: !<uint32_t> 0 # 0x00000000
+  FtrGtPsmi: !<uint32_t> 1 # 0x00000001
+  FtrGSC: !<uint32_t> 1 # 0x00000001
+  FtrGscCS: !<uint32_t> 1 # 0x00000001
+  FtrGscHeci2ChildDevice: !<uint32_t> 1 # 0x00000001
+  FtrGucDepriv: !<uint32_t> 0 # 0x00000000
+  FtrGscBasedHucLoad: !<uint32_t> 0 # 0x00000000
+  FtrGscSwProxy: !<uint32_t> 1 # 0x00000001
+  FtrFetchGscSVN: !<uint32_t> 0 # 0x00000000
+  FtrGscBasedWOPCMProgramming: !<uint32_t> 1 # 0x00000001
+  FtrGscFwBufferInStolenMemory: !<uint32_t> 0 # 0x00000000
+  FtrGscBasedHucAuth: !<uint32_t> 1 # 0x00000001
+  FtrSoftconfigFanTable: !<uint32_t> 1 # 0x00000001
+  FtrSoftconfigVrConfig: !<uint32_t> 1 # 0x00000001
+  FtrAssignedGpuTile: !<uint32_t> 0 # 0x00000000
+  FtrSlsSupported: !<uint32_t> 0 # 0x00000000
+  FtrLdaMode: !<uint32_t> 0 # 0x00000000
+m_GtSystemInfo: !<GT_SYSTEM_INFO>
+  EUCount: !<uint32_t> 160 # 0x000000a0
+  ThreadCount: !<uint32_t> 1280 # 0x00000500
+  SliceCount: !<uint32_t> 5 # 0x00000005
+  SubSliceCount: !<uint32_t> 20 # 0x00000014
+  DualSubSliceCount: !<uint32_t> 0 # 0x00000000
+  L3CacheSizeInKb: !<uint64_t> 18432 # 0x0000000000004800
+  LLCCacheSizeInKb: !<uint64_t> 0 # 0x0000000000000000
+  EdramSizeInKb: !<uint64_t> 0 # 0x0000000000000000
+  L4SizeInKb: !<uint64_t> 0 # 0x0000000000000000
+  L3BankCount: !<uint32_t> 24 # 0x00000018
+  MaxFillRate: !<uint32_t> 80 # 0x00000050
+  EuCountPerPoolMax: !<uint32_t> 0 # 0x00000000
+  EuCountPerPoolMin: !<uint32_t> 0 # 0x00000000
+  TotalVsThreads: !<uint32_t> 546 # 0x00000222
+  TotalHsThreads: !<uint32_t> 336 # 0x00000150
+  TotalDsThreads: !<uint32_t> 546 # 0x00000222
+  TotalGsThreads: !<uint32_t> 312 # 0x00000138
+  TotalPsThreadsWindowerRange: !<uint32_t> 96 # 0x00000060
+  TotalVsThreads_Pocs: !<uint32_t> 0 # 0x00000000
+  CsrSizeInMb: !<uint32_t> 0 # 0x00000000
+  MaxEuPerSubSlice: !<uint32_t> 8 # 0x00000008
+  MaxSlicesSupported: !<uint32_t> 5 # 0x00000005
+  MaxSubSlicesSupported: !<uint32_t> 20 # 0x00000014
+  MaxDualSubSlicesSupported: !<uint32_t> 0 # 0x00000000
+  IsL3HashModeEnabled: !<bool> false
+  IsL3HashModeEnabled_padding: !<uint32_t> 0 # 0x00000000
+  SliceInfo:
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> true
+      Enabled_padding: !<uint32_t> 1 # 0x00000001
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 4 # 0x00000004
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> true
+      Enabled_padding: !<uint32_t> 1 # 0x00000001
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 4 # 0x00000004
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> true
+      Enabled_padding: !<uint32_t> 1 # 0x00000001
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 4 # 0x00000004
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> true
+      Enabled_padding: !<uint32_t> 1 # 0x00000001
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 4 # 0x00000004
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> true
+      Enabled_padding: !<uint32_t> 1 # 0x00000001
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> true
+          Enabled_padding: !<uint32_t> 1 # 0x00000001
+          EuEnabledCount: !<uint32_t> 8 # 0x00000008
+          EuEnabledMask: !<uint32_t> 15 # 0x0000000f
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 4 # 0x00000004
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+    - !<GT_SLICE_INFO>
+      Enabled: !<bool> false
+      Enabled_padding: !<uint32_t> 0 # 0x00000000
+      SubSliceInfo:
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_SUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          EuEnabledCount: !<uint32_t> 0 # 0x00000000
+          EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      DSSInfo:
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+        - !<GT_DUALSUBSLICE_INFO>
+          Enabled: !<bool> false
+          Enabled_padding: !<uint32_t> 0 # 0x00000000
+          SubSlice:
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+            - !<GT_SUBSLICE_INFO>
+              Enabled: !<bool> false
+              Enabled_padding: !<uint32_t> 0 # 0x00000000
+              EuEnabledCount: !<uint32_t> 0 # 0x00000000
+              EuEnabledMask: !<uint32_t> 0 # 0x00000000
+      SubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+      DualSubSliceEnabledCount: !<uint32_t> 0 # 0x00000000
+  IsDynamicallyPopulated: !<bool> true
+  IsDynamicallyPopulated_padding: !<uint32_t> 1 # 0x00000001
+  SqidiInfo: !<GT_SQIDI_INFO>
+    NumberofSQIDI: !<uint32_t> 0 # 0x00000000
+    NumberofGTI: !<uint32_t> 0 # 0x00000000
+    NumberofDoorbellPerSQIDI: !<uint32_t> 0 # 0x00000000
+  ReservedCCSWays: !<uint32_t> 0 # 0x00000000
+  CCSInfo: !<GT_CCS_INFO>
+    Instances: !<GT_CCS_INFO::CCSInstances>
+      Bits: !<GT_CCS_INFO::CCSInstances::CCSBitStruct>
+        CCS0Enabled: !<uint32_t> 1 # 0x00000001
+        CCS1Enabled: !<uint32_t> 0 # 0x00000000
+        CCS2Enabled: !<uint32_t> 0 # 0x00000000
+        CCS3Enabled: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    NumberOfCCSEnabled: !<uint32_t> 1 # 0x00000001
+    ComputeDSSEnableMask:
+      - !<uint32_t> 1048575 # 0x000fffff
+      - !<uint32_t> 0 # 0x00000000
+      - !<uint32_t> 0 # 0x00000000
+      - !<uint32_t> 0 # 0x00000000
+    IsValid: !<bool> true
+    IsValid_padding: !<uint32_t> 1 # 0x00000001
+  MultiTileArchInfo: !<GT_MULTI_TILE_ARCH_INFO>
+    TileCount: !<uint8_t> 0 # 0x00
+    Tile0: !<uint8_t> 0 # 0x00
+    Tile1: !<uint8_t> 0 # 0x00
+    Tile2: !<uint8_t> 0 # 0x00
+    Tile3: !<uint8_t> 0 # 0x00
+    Reserved: !<uint8_t> 0 # 0x00
+    Padding: !<uint16_t> 0 # 0x0000
+    IsValid: !<bool> false
+    IsValid_padding: !<uint32_t> 0 # 0x00000000
+  VDBoxInfo: !<_GT_VDBOX_INFO>
+    Instances: !<_GT_VDBOX_INFO::VDBoxInstances>
+      Bits: !<_GT_VDBOX_INFO::VDBoxInstances::VDBitStruct>
+        VDBox0Enabled: !<uint32_t> 0 # 0x00000000
+        VDBox1Enabled: !<uint32_t> 0 # 0x00000000
+        VDBox2Enabled: !<uint32_t> 0 # 0x00000000
+        VDBox3Enabled: !<uint32_t> 0 # 0x00000000
+        VDBox4Enabled: !<uint32_t> 0 # 0x00000000
+        VDBox5Enabled: !<uint32_t> 0 # 0x00000000
+        VDBox6Enabled: !<uint32_t> 0 # 0x00000000
+        VDBox7Enabled: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    SFCSupport:
+      SfcSupportedBits:
+        VDBox0: !<uint32_t> 0 # 0x00000000
+        VDBox1: !<uint32_t> 0 # 0x00000000
+        VDBox2: !<uint32_t> 0 # 0x00000000
+        VDBox3: !<uint32_t> 0 # 0x00000000
+        VDBox4: !<uint32_t> 0 # 0x00000000
+        VDBox5: !<uint32_t> 0 # 0x00000000
+        VDBox6: !<uint32_t> 0 # 0x00000000
+        VDBox7: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VDBoxTypeA:
+      VDBoxTypeABits:
+        VDBox0TypeA: !<uint32_t> 0 # 0x00000000
+        VDBox1TypeA: !<uint32_t> 0 # 0x00000000
+        VDBox2TypeA: !<uint32_t> 0 # 0x00000000
+        VDBox3TypeA: !<uint32_t> 0 # 0x00000000
+        VDBox4TypeA: !<uint32_t> 0 # 0x00000000
+        VDBox5TypeA: !<uint32_t> 0 # 0x00000000
+        VDBox6TypeA: !<uint32_t> 0 # 0x00000000
+        VDBox7TypeA: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VDBoxTypeB:
+      VDBoxTypeBBits:
+        VDBox0TypeB: !<uint32_t> 0 # 0x00000000
+        VDBox1TypeB: !<uint32_t> 0 # 0x00000000
+        VDBox2TypeB: !<uint32_t> 0 # 0x00000000
+        VDBox3TypeB: !<uint32_t> 0 # 0x00000000
+        VDBox4TypeB: !<uint32_t> 0 # 0x00000000
+        VDBox5TypeB: !<uint32_t> 0 # 0x00000000
+        VDBox6TypeB: !<uint32_t> 0 # 0x00000000
+        VDBox7TypeB: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VDBoxTypeD:
+      VDBoxTypeDBits:
+        VDBox0TypeD: !<uint32_t> 0 # 0x00000000
+        VDBox1TypeD: !<uint32_t> 0 # 0x00000000
+        VDBox2TypeD: !<uint32_t> 0 # 0x00000000
+        VDBox3TypeD: !<uint32_t> 0 # 0x00000000
+        VDBox4TypeD: !<uint32_t> 0 # 0x00000000
+        VDBox5TypeD: !<uint32_t> 0 # 0x00000000
+        VDBox6TypeD: !<uint32_t> 0 # 0x00000000
+        VDBox7TypeD: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VDBoxTypeN:
+      VDBoxTypeNBits:
+        VDBox0TypeN: !<uint32_t> 0 # 0x00000000
+        VDBox1TypeN: !<uint32_t> 0 # 0x00000000
+        VDBox2TypeN: !<uint32_t> 0 # 0x00000000
+        VDBox3TypeN: !<uint32_t> 0 # 0x00000000
+        VDBox4TypeN: !<uint32_t> 0 # 0x00000000
+        VDBox5TypeN: !<uint32_t> 0 # 0x00000000
+        VDBox6TypeN: !<uint32_t> 0 # 0x00000000
+        VDBox7TypeN: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VDBoxTypeMA:
+      VDBoxTypeMABits:
+        VDBox0TypeMA: !<uint32_t> 0 # 0x00000000
+        VDBox1TypeMA: !<uint32_t> 0 # 0x00000000
+        VDBox2TypeMA: !<uint32_t> 0 # 0x00000000
+        VDBox3TypeMA: !<uint32_t> 0 # 0x00000000
+        VDBox4TypeMA: !<uint32_t> 0 # 0x00000000
+        VDBox5TypeMA: !<uint32_t> 0 # 0x00000000
+        VDBox6TypeMA: !<uint32_t> 0 # 0x00000000
+        VDBox7TypeMA: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    NumberOfVDBoxEnabled: !<uint32_t> 0 # 0x00000000
+    IsValid: !<bool> false
+    IsValid_padding: !<uint32_t> 0 # 0x00000000
+  VEBoxInfo: !<_GT_VEBOX_INFO>
+    Instances: !<_GT_VEBOX_INFO::VEBoxInstances>
+      Bits: !<_GT_VEBOX_INFO::VEBoxInstances::VEBitStruct>
+        VEBox0Enabled: !<uint32_t> 0 # 0x00000000
+        VEBox1Enabled: !<uint32_t> 0 # 0x00000000
+        VEBox2Enabled: !<uint32_t> 0 # 0x00000000
+        VEBox3Enabled: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    SFCSupport:
+      SfcSupportedBits:
+        VEBox0: !<uint32_t> 0 # 0x00000000
+        VEBox1: !<uint32_t> 0 # 0x00000000
+        VEBox2: !<uint32_t> 0 # 0x00000000
+        VEBox3: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VEBoxTypeA:
+      VEBoxTypeABits:
+        VEBox0TypeA: !<uint32_t> 0 # 0x00000000
+        VEBox1TypeA: !<uint32_t> 0 # 0x00000000
+        VEBox2TypeA: !<uint32_t> 0 # 0x00000000
+        VEBox3TypeA: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VEBoxTypeH:
+      VEBoxTypeHBits:
+        VEBox0TypeH: !<uint32_t> 0 # 0x00000000
+        VEBox1TypeH: !<uint32_t> 0 # 0x00000000
+        VEBox2TypeH: !<uint32_t> 0 # 0x00000000
+        VEBox3TypeH: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    VEBoxTypeP:
+      VEBoxTypePBits:
+        VEBox0TypeP: !<uint32_t> 0 # 0x00000000
+        VEBox1TypeP: !<uint32_t> 0 # 0x00000000
+        VEBox2TypeP: !<uint32_t> 0 # 0x00000000
+        VEBox3TypeP: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    NumberOfVEBoxEnabled: !<uint32_t> 0 # 0x00000000
+    IsValid: !<bool> false
+    IsValid_padding: !<uint32_t> 0 # 0x00000000
+  WGBoxInfo: !<GT_WGBOX_INFO>
+    Instances: !<GT_WGBOX_INFO::WGBoxInstances>
+      Bits: !<GT_WGBOX_INFO::WGBoxInstances::WGBitStruct>
+        WGBox0Enabled: !<uint32_t> 0 # 0x00000000
+        WGBox1Enabled: !<uint32_t> 0 # 0x00000000
+        Reserved: !<uint32_t> 0 # 0x00000000
+    NumberOfWGBoxEnabled: !<uint32_t> 0 # 0x00000000
+    IsValid: !<bool> false
+    IsValid_padding: !<uint32_t> 0 # 0x00000000
+  GscInfo: !<GT_GSC_INFO>
+    Enabled: !<uint32_t> 0 # 0x00000000
+    IsInitInProgress: !<uint32_t> 0 # 0x00000000
+    IsInitialized: !<uint32_t> 0 # 0x00000000
+    IsValid: !<bool> false
+    IsValid_padding: !<uint32_t> 0 # 0x00000000
+    ClkTicksPerSec: !<uint32_t> 0 # 0x00000000
+  RcsResourceReservations: !<_RCS_RESOURCE_RESERVATION>
+    Enabled: !<uint32_t> 0 # 0x00000000
+    ThreadsPerEu: !<uint32_t> 0 # 0x00000000
+    SlmPerSubsliceInKb: !<uint32_t> 0 # 0x00000000
+    BarrierPerSubslice: !<uint32_t> 0 # 0x00000000
+  MaxNumEuPerDSS: !<uint32_t> 0 # 0x00000000
+  NumThreadsPerEu: !<uint32_t> 8 # 0x00000008
+  NumPixelPipes: !<uint32_t> 2 # 0x00000002
+  MaxNumGeometryPipes: !<uint32_t> 5 # 0x00000005
+  URBSizeInKb: !<uint32_t> 3840 # 0x00000f00
+  MinVSURBEntries: !<uint32_t> 64 # 0x00000040
+  MaxVSURBEntries: !<uint32_t> 5888 # 0x00001700
+  MinPCSURBEntries: !<uint32_t> 0 # 0x00000000
+  MaxPCSURBEntries: !<uint32_t> 0 # 0x00000000
+  MinHSURBEntries: !<uint32_t> 0 # 0x00000000
+  MaxHSURBEntries: !<uint32_t> 1548 # 0x0000060c
+  MinGSURBEntries: !<uint32_t> 2 # 0x00000002
+  MaxGSURBEntries: !<uint32_t> 1952 # 0x000007a0
+  MinDSURBEntries: !<uint32_t> 50 # 0x00000032
+  MaxDSURBEntries: !<uint32_t> 4480 # 0x00001180
+  MinCSURBEntries: !<uint32_t> 0 # 0x00000000
+  MaxCSURBEntries: !<uint32_t> 0 # 0x00000000
+  MinTaskURBEntries: !<uint32_t> 0 # 0x00000000
+  MaxTaskURBEntries: !<uint32_t> 1548 # 0x0000060c
+  MinMeshURBEntries: !<uint32_t> 4 # 0x00000004
+  MaxMeshURBEntries: !<uint32_t> 1952 # 0x000007a0
+  PushConstantURBReservedSize: !<uint32_t> 32768 # 0x00008000
+  PocsPushConstantURBReservedSize: !<uint32_t> 0 # 0x00000000
+  URBRegionAlignmentSizeInBytes: !<uint32_t> 8192 # 0x00002000
+  URBAllocationSizeUnitsInBytes: !<uint32_t> 64 # 0x00000040
+  MaxCCSURBSizeInBytes: !<uint32_t> 0 # 0x00000000
+  MaxURBStartingAddress: !<uint32_t> 127 # 0x0000007f
+  MinVSDerefBlockSizeHandleCount: !<uint32_t> 192 # 0x000000c0
+  MinDSDerefBlockSizeHandleCount: !<uint32_t> 324 # 0x00000144
+  NumRTStacksPerSubsystem: !<uint32_t> 2048 # 0x00000800
+  SLMSizeInKb: !<uint32_t> 160 # 0x000000a0
+  MaxMemoryChannels: !<uint32_t> 2 # 0x00000002
+  CacheTypes: !<_GT_CACHE_TYPES>
+    L3: !<uint32_t> 1 # 0x00000001
+    LLC: !<uint32_t> 0 # 0x00000000
+    eDRAM: !<uint32_t> 0 # 0x00000000
+    Reserved: !<uint32_t> 0 # 0x00000000
+  LocalMemoryPageSizesSupported: !<uint32_t> 1075908608 # 0x40211000
+  L3CacheWaysPerSector: !<uint32_t> 0 # 0x00000000
+  L3CacheWaysSizeInBytes: !<uint32_t> 0 # 0x00000000
+  MemoryType: !<uint32_t> 4 # 0x00000004
+  MaxRCS: !<uint32_t> 1 # 0x00000001
+  MaxCCS: !<uint32_t> 2 # 0x00000002
+  MaxVCS: !<uint32_t> 2 # 0x00000002
+  MaxVECS: !<uint32_t> 2 # 0x00000002
+  MaxBLT: !<uint32_t> 1 # 0x00000001
+  MaxL3Configs: !<uint32_t> 0 # 0x00000000
+  L3AllocationPerBankInKb:
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+    - !<_L3_ALLOCATION>
+      URB: !<uint32_t> 0 # 0x00000000
+      Rest: !<uint32_t> 0 # 0x00000000
+      DC: !<uint32_t> 0 # 0x00000000
+      RO: !<uint32_t> 0 # 0x00000000
+      RW: !<uint32_t> 0 # 0x00000000
+      Z: !<uint32_t> 0 # 0x00000000
+      Color: !<uint32_t> 0 # 0x00000000
+      UnifiedTileCache: !<uint32_t> 0 # 0x00000000
+      CommandBuffer: !<uint32_t> 0 # 0x00000000
+  BindlessSurfaceOffsetBitCount: !<uint32_t> 26 # 0x0000001a
+  DeviceUUID: !<uint64_t> 16867978453176295089 # 0xea17190864841eb1
+  L3NodeEnabledMask: !<uint32_t> 63 # 0x0000003f
+  L3BankEnabledMask: !<uint32_t> 15 # 0x0000000f
+  NumSubSlicePerSlice: !<uint32_t> 0 # 0x00000000
+  MaxGSC: !<uint32_t> 1 # 0x00000001
+  SyncNumRTStacksPerSubsystem: !<uint32_t> 0 # 0x00000000
+  NumXeCU: !<uint32_t> 0 # 0x00000000
+  MemoryURBSizePerSlice: !<uint32_t> 0 # 0x00000000
+...
+
+#
+# All enum definitions:
+#  >> enum PRODUCT_FAMILY:
+#	IGFX_UNKNOWN: 0, IGFX_GRANTSDALE_G: 1, IGFX_ALVISO_G: 2, IGFX_LAKEPORT_G: 3, IGFX_CALISTOGA_G: 4,
+#	IGFX_BROADWATER_G: 5, IGFX_CRESTLINE_G: 6, IGFX_BEARLAKE_G: 7, IGFX_CANTIGA_G: 8, IGFX_CEDARVIEW_G: 9,
+#	IGFX_EAGLELAKE_G: 10, IGFX_IRONLAKE_G: 11, IGFX_GT: 12, IGFX_IVYBRIDGE: 13, IGFX_HASWELL: 14, IGFX_VALLEYVIEW: 15,
+#	IGFX_BROADWELL: 16, IGFX_CHERRYVIEW: 17, IGFX_SKYLAKE: 18, IGFX_KABYLAKE: 19, IGFX_COFFEELAKE: 20,
+#	IGFX_WILLOWVIEW: 21, IGFX_BROXTON: 22, IGFX_GEMINILAKE: 23, IGFX_GLENVIEW: 24, IGFX_GOLDWATERLAKE: 25,
+#	IGFX_CANNONLAKE: 26, IGFX_CNX_G: 27, IGFX_ICELAKE: 28, IGFX_ICELAKE_LP: 29, IGFX_LAKEFIELD: 30, IGFX_JASPERLAKE: 31,
+#	IGFX_LAKEFIELD_R: 32, IGFX_TIGERLAKE_LP: 33, IGFX_RYEFIELD: 34, IGFX_ROCKETLAKE: 35, IGFX_ALDERLAKE_S: 36,
+#	IGFX_ALDERLAKE_P: 37, IGFX_ALDERLAKE_N: 38, IGFX_DG1: 1210, IGFX_XE_HP_SDV: 1250, IGFX_DG2: 1270, IGFX_PVC: 1271,
+#	IGFX_METEORLAKE: 1272, IGFX_ARROWLAKE: 1273, IGFX_BMG: 1274, IGFX_LUNARLAKE: 1275, IGFX_LUNARLAKE_M: 1276,
+#	IGFX_RLT: 1280, IGFX_PTL: 1300, IGFX_NVL_XE3G: 1340, IGFX_FCS: 1350, IGFX_NVL: 1360, IGFX_TTL_XE3PG: 1361,
+#	IGFX_TTL_B: 1362, IGFX_NVL_AX: 1365, IGFX_TTL_H: 1366, IGFX_HML: 1367, IGFX_HML_AX: 1368, IGFX_CLS: 1370,
+#	IGFX_CRI: 1380, IGFX_JGS: 1400, IGFX_XE5V3_PF: 1425, IGFX_EXI: 1426, IGFX_MAX_PRODUCT: 1427,
+#	IGFX_GENNEXT: 2147483646, PRODUCT_FAMILY_FORCE_ULONG: 2147483647
+#  >> enum PCH_PRODUCT_FAMILY:
+#	PCH_UNKNOWN: 0, PCH_IBX: 1, PCH_CPT: 2, PCH_CPTR: 3, PCH_PPT: 4, PCH_LPT: 5, PCH_LPTR: 6, PCH_WPT: 7, PCH_SPT: 8,
+#	PCH_KBP: 9, PCH_CMP_V: 10, PCH_CNP_LP: 11, PCH_CNP_H: 12, PCH_ICP_LP: 13, PCH_ICP_N: 14, PCH_ICP_HP: 15, PCH_LKF: 16,
+#	PCH_TGL_LP: 17, PCH_CMP_LP: 18, PCH_CMP_H: 19, PCH_EHL: 20, PCH_JSP_N: 21, PCH_ADL_S: 22, PCH_ADL_P: 23,
+#	PCH_TGL_H: 24, PCH_MTL: 25, PCH_RPL_S: 26, PCH_ADL_N: 27, PCH_ARL: 28, PCH_DONT_CARE: 2147483646,
+#	PCH_PRODUCT_FAMILY_FORCE_ULONG: 2147483647
+#  >> enum GFXCORE_FAMILY:
+#	IGFX_UNKNOWN_CORE: 0, IGFX_GEN3_CORE: 1, IGFX_GEN3_5_CORE: 2, IGFX_GEN4_CORE: 3, IGFX_GEN4_5_CORE: 4,
+#	IGFX_GEN5_CORE: 5, IGFX_GEN5_5_CORE: 6, IGFX_GEN5_75_CORE: 7, IGFX_GEN6_CORE: 8, IGFX_GEN7_CORE: 9,
+#	IGFX_GEN7_5_CORE: 10, IGFX_GEN8_CORE: 11, IGFX_GEN9_CORE: 12, IGFX_GEN10_CORE: 13, IGFX_GEN10LP_CORE: 14,
+#	IGFX_GEN11_CORE: 15, IGFX_GEN11LP_CORE: 16, IGFX_GEN12_CORE: 17, IGFX_GEN12LP_CORE: 18, IGFX_XE_HP_CORE: 3077,
+#	IGFX_XE_HPG_CORE: 3079, IGFX_XE_HPC_CORE: 3080, IGFX_XE2_HPG_CORE: 3081, IGFX_GEN13_CORE: 3328,
+#	IGFX_GEN13_1_CORE: 3329, IGFX_GEN14_CORE: 3584, IGFX_GEN14_1_CORE: 3585, IGFX_GEN15_CORE: 3840, IGFX_XE2_LPM: 4096,
+#	IGFX_XE3_CORE: 7680, IGFX_XE3P_CORE: 8960, IGFX_XE3P_HPM: 8961, IGFX_XE3P_V3_CORE: 8980, IGFX_XE3P_V4_CORE: 8990,
+#	IGFX_XE3P_V5_CORE: 9000, IGFX_XE4_CORE: 10240, IGFX_XE4_V1_LPM: 10241, IGFX_XE4_V2_LPM: 10242,
+#	IGFX_XE4_V2_LPD: 10250, IGFX_XE4_V3_LPD: 10260, IGFX_XE5_V1_CORE: 12800, IGFX_XE5_V3_CORE: 12810,
+#	IGFX_MAX_CORE: 12811, IGFX_GENNEXT_CORE: 2147483646, GFXCORE_FAMILY_FORCE_ULONG: 2147483647
+#  >> enum PLATFORM_TYPE:
+#	PLATFORM_NONE: 0, PLATFORM_DESKTOP: 1, PLATFORM_MOBILE: 2, PLATFORM_PERFORMANCE: 3, PLATFORM_ALL: 255,
+#	PLATFORM_TYPE_FORCE_ULONG: 2147483647
+#  >> enum __GTTYPE:
+#	GTTYPE_GT1: 0, GTTYPE_GT2: 1, GTTYPE_GT2_FUSED_TO_GT1: 2, GTTYPE_GT2_FUSED_TO_GT1_6: 3, GTTYPE_GTL: 4, GTTYPE_GTM: 5,
+#	GTTYPE_GTH: 6, GTTYPE_GT1_5: 7, GTTYPE_GT1_75: 8, GTTYPE_GT3: 9, GTTYPE_GT4: 10, GTTYPE_GT0: 11, GTTYPE_GTA: 12,
+#	GTTYPE_GTC: 13, GTTYPE_GTX: 14, GTTYPE_GT2_5: 15, GTTYPE_GT3_5: 16, GTTYPE_GT0_5: 17, GTTYPE_UNDEFINED: 18,
+#	GTTYPE_FORCE_ULONG: 2147483647
+#
