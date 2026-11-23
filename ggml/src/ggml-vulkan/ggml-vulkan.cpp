@@ -742,10 +742,19 @@ static void ggml_vk_create_pipeline_func(vk_device& device, vk_pipeline& pipelin
         pipeline_shader_create_info.setPNext(&pipeline_shader_stage_required_subgroup_size_create_info);
     }
 
+    // GGML_VK_PIPELINE_IR=<name filter>: dump driver internal representations (ISA) to files
+    static const char * vk_pipeline_ir_filter = getenv("GGML_VK_PIPELINE_IR");
+    const bool dump_ir = device->pipeline_executable_properties_support && vk_pipeline_ir_filter &&
+                         pipeline->name.find(vk_pipeline_ir_filter) != std::string::npos;
+
+    vk::PipelineCreateFlags pipeline_create_flags = device->pipeline_executable_properties_support ?
+            vk::PipelineCreateFlagBits::eCaptureStatisticsKHR : vk::PipelineCreateFlags{};
+    if (dump_ir) {
+        pipeline_create_flags |= vk::PipelineCreateFlagBits::eCaptureInternalRepresentationsKHR;
+    }
+
     vk::ComputePipelineCreateInfo compute_pipeline_create_info(
-        device->pipeline_executable_properties_support ?
-            vk::PipelineCreateFlagBits::eCaptureStatisticsKHR :
-            vk::PipelineCreateFlags{},
+        pipeline_create_flags,
         pipeline_shader_create_info,
         pipeline->layout);
 
@@ -764,6 +773,9 @@ static void ggml_vk_create_pipeline_func(vk_device& device, vk_pipeline& pipelin
         pipelineFlags2CreateInfo.flags = vk::PipelineCreateFlagBits2::e64BitIndexingEXT;
         if (device->pipeline_executable_properties_support) {
             pipelineFlags2CreateInfo.flags |= vk::PipelineCreateFlagBits2::eCaptureStatisticsKHR;
+        }
+        if (dump_ir) {
+            pipelineFlags2CreateInfo.flags |= vk::PipelineCreateFlagBits2::eCaptureInternalRepresentationsKHR;
         }
         pipelineFlags2CreateInfo.setPNext(compute_pipeline_create_info.pNext);
         compute_pipeline_create_info.setPNext(&pipelineFlags2CreateInfo);
@@ -790,6 +802,32 @@ static void ggml_vk_create_pipeline_func(vk_device& device, vk_pipeline& pipelin
         executableInfo.pipeline = pipeline->pipeline;
 
         auto statistics = device->device.getPipelineExecutableStatisticsKHR(executableInfo);
+
+        if (dump_ir) {
+            VkDevice dev = static_cast<VkDevice>(device->device);
+            VkPipelineExecutableInfoKHR info = static_cast<VkPipelineExecutableInfoKHR>(executableInfo);
+            auto pfn = (PFN_vkGetPipelineExecutableInternalRepresentationsKHR) vkGetDeviceProcAddr(dev, "vkGetPipelineExecutableInternalRepresentationsKHR");
+            uint32_t n_ir = 0;
+            pfn(dev, &info, &n_ir, nullptr);
+            std::vector<VkPipelineExecutableInternalRepresentationKHR> irs(n_ir, { VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_INTERNAL_REPRESENTATION_KHR });
+            pfn(dev, &info, &n_ir, irs.data());
+            std::vector<std::vector<char>> bufs(n_ir);
+            for (uint32_t i = 0; i < n_ir; i++) {
+                bufs[i].resize(irs[i].dataSize);
+                irs[i].pData = bufs[i].data();
+            }
+            VkResult ir_res = pfn(dev, &info, &n_ir, irs.data());
+            std::cerr << "ggml_vulkan: IR fetch result " << ir_res << std::endl;
+            for (uint32_t i = 0; i < n_ir; i++) {
+                std::string fname = pipeline->name + "." + std::to_string(i) + (irs[i].isText ? ".txt" : ".bin");
+                FILE * f = fopen(fname.c_str(), "wb");
+                if (f) {
+                    fwrite(bufs[i].data(), 1, bufs[i].size(), f);
+                    fclose(f);
+                }
+                std::cerr << "ggml_vulkan: IR '" << irs[i].name << "' (" << irs[i].description << ") -> " << fname << std::endl;
+            }
+        }
 
         bool print_stats = !vk_pipeline_stats_filter.empty() &&
                            pipeline->name.find(vk_pipeline_stats_filter) != std::string::npos;

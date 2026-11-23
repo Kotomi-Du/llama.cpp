@@ -5617,6 +5617,15 @@ struct test_mul_mat_large_b : public test_mul_mat {
     test_mul_mat_large_b(ggml_type type_a, ggml_type type_b, int64_t m, int64_t n, int64_t k, float b_max)
         : test_mul_mat(type_a, type_b, m, n, k, {1, 1}, {1, 1}), b_max(b_max) {}
 
+    // GGML_TEST_MM_F32ACC=1: request f32 accumulator
+    ggml_tensor * build_graph(ggml_context * ctx) override {
+        ggml_tensor * out = test_mul_mat::build_graph(ctx);
+        if (getenv("GGML_TEST_MM_F32ACC")) {
+            GGML_ASSERT(ggml_prec_set_acc(out, GGML_PREC_F32));
+        }
+        return out;
+    }
+
     // GGML_TEST_MM_DATA=<file>: load a and b from file if it exists, else save the random a and b to it
     void initialize_tensors(ggml_context * ctx) override {
         const char * path = getenv("GGML_TEST_MM_DATA");
