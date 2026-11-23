@@ -5606,6 +5606,28 @@ struct test_mul_mat : public test_case {
     }
 };
 
+// large src1 values, to catch f16 accumulator overflow
+struct test_mul_mat_large_b : public test_mul_mat {
+    const float b_max;
+
+    std::string vars() override {
+        return test_mul_mat::vars() + "," + VAR_TO_STR(b_max);
+    }
+
+    test_mul_mat_large_b(ggml_type type_a, ggml_type type_b, int64_t m, int64_t n, int64_t k, float b_max)
+        : test_mul_mat(type_a, type_b, m, n, k, {1, 1}, {1, 1}), b_max(b_max) {}
+
+    void initialize_tensors(ggml_context * ctx) override {
+        for (ggml_tensor * t = ggml_get_first_tensor(ctx); t != NULL; t = ggml_get_next_tensor(ctx, t)) {
+            if (strcmp(t->name, "b") == 0) {
+                init_tensor_uniform(t, -b_max, b_max);
+            } else {
+                init_tensor_uniform(t);
+            }
+        }
+    }
+};
+
 // GGML_HINT_SRC0_IS_HADAMARD
 struct test_mul_mat_hadamard : public test_mul_mat {
     test_mul_mat_hadamard(ggml_type type_a = GGML_TYPE_F32, ggml_type type_b = GGML_TYPE_F32,
@@ -11740,6 +11762,11 @@ static std::vector<std::unique_ptr<test_case>> make_test_cases_eval() {
     test_cases.emplace_back(new test_mul_mat_hadamard(GGML_TYPE_F32, GGML_TYPE_F16, 4096, 1, 4096));
     test_cases.emplace_back(new test_mul_mat_hadamard(GGML_TYPE_F32, GGML_TYPE_F16, 8192, 1, 8192));
     test_cases.emplace_back(new test_mul_mat_hadamard(GGML_TYPE_F32, GGML_TYPE_F16, 1024, 7, 1024));  // many rows
+
+    // MAI-Code blk.40.ffn_down shape
+    for (float b_max : {1.0f, 300.0f, 1000.0f}) {
+        test_cases.emplace_back(new test_mul_mat_large_b(GGML_TYPE_Q3_K, GGML_TYPE_F32, 3584, 16, 3584, b_max));
+    }
 
     // src1 precision: few-row paths, aligned tiles, partial tiles (K and output), broadcast batches
     for (ggml_type type_a : {GGML_TYPE_F32, GGML_TYPE_F16, GGML_TYPE_Q8_0}) {
