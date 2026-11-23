@@ -5617,13 +5617,33 @@ struct test_mul_mat_large_b : public test_mul_mat {
     test_mul_mat_large_b(ggml_type type_a, ggml_type type_b, int64_t m, int64_t n, int64_t k, float b_max)
         : test_mul_mat(type_a, type_b, m, n, k, {1, 1}, {1, 1}), b_max(b_max) {}
 
+    // GGML_TEST_MM_DATA=<file>: load a and b from file if it exists, else save the random a and b to it
     void initialize_tensors(ggml_context * ctx) override {
+        const char * path = getenv("GGML_TEST_MM_DATA");
+        FILE * f = path ? fopen(path, "rb") : nullptr;
+        const bool load = f != nullptr;
+        if (!load && path) {
+            f = fopen(path, "wb");
+        }
         for (ggml_tensor * t = ggml_get_first_tensor(ctx); t != NULL; t = ggml_get_next_tensor(ctx, t)) {
-            if (strcmp(t->name, "b") == 0) {
-                init_tensor_uniform(t, -b_max, b_max);
-            } else {
-                init_tensor_uniform(t);
+            const bool is_b = strcmp(t->name, "b") == 0;
+            if (!load) {
+                init_tensor_uniform(t, is_b ? -b_max : -1.0f, is_b ? b_max : 1.0f);
             }
+            if (!f || (!is_b && strcmp(t->name, "a") != 0)) {
+                continue;
+            }
+            std::vector<uint8_t> buf(ggml_nbytes(t));
+            if (load) {
+                GGML_ASSERT(fread(buf.data(), 1, buf.size(), f) == buf.size() && "data file does not match test shape");
+                ggml_backend_tensor_set(t, buf.data(), 0, buf.size());
+            } else {
+                ggml_backend_tensor_get(t, buf.data(), 0, buf.size());
+                fwrite(buf.data(), 1, buf.size(), f);
+            }
+        }
+        if (f) {
+            fclose(f);
         }
     }
 };
