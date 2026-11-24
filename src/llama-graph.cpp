@@ -2174,6 +2174,10 @@ ggml_tensor * llm_graph_context::build_ffn(
             // GLM4, GLM4_MOE, and JAIS2 have numerical issues with F16 accumulators
             ggml_prec_set_acc(cur, GGML_PREC_BF16);
         }
+        if (arch == LLM_ARCH_MAION_CODER && getenv("GGML_TEST_MM_F32ACC")) {
+            // Windows Intel coopmat f16 accumulator gives inf here
+            ggml_prec_set_acc(cur, GGML_PREC_F32);
+        }
     }
 
     if (down_b) {
