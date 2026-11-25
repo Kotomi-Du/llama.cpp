@@ -17,6 +17,8 @@
 
 </div>
 
+> **Profiling notes:** [Layer split vs tensor split: two-GPU decode profiling](docs/profiling/layer-vs-tensor-split-profiling.md)
+
 ## Quick start
 
 A few options to get `llama.cpp` installed on your machine:
