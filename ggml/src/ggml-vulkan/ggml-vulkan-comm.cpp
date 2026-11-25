@@ -508,6 +508,13 @@ void * ggml_backend_vk_comm_init(ggml_backend_t * backends, size_t n_backends) {
 // A: partial to own host slot (round & 1), signal; B: wait on peers' A, add their slots; all A precede any B
 // slot reuse: A(k) follows own B(k-1), which waited on peers' A(k-1), submitted after their B(k-2), the last reader
 bool ggml_backend_vk_comm_allreduce_tensor(void * comm_ctx, ggml_tensor ** tensors) {
+    const bool profile = getenv("GGML_VK_COMM_PROFILE") != nullptr;
+    const auto start = profile ? std::chrono::steady_clock::now() : std::chrono::steady_clock::time_point{};
+    // profiling only: produces wrong results, measures compute without the reduction
+    static const bool skip = getenv("GGML_VK_COMM_SKIP") != nullptr;
+    if (skip) {
+        return true;
+    }
     ggml_backend_vk_comm_context * comm = static_cast<ggml_backend_vk_comm_context *>(comm_ctx);
     const size_t n = comm->devs.size();
 
@@ -585,6 +592,12 @@ bool ggml_backend_vk_comm_allreduce_tensor(void * comm_ctx, ggml_tensor ** tenso
         if (wire != GGML_TYPE_F32 || vk_perf_logger_enabled) {
             ggml_vk_comm_submit(ctx, c, {}, 0);
         }
+    }
+    if (profile) {
+        const auto host_us = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::steady_clock::now() - start).count();
+        fprintf(stderr, "VK_COMM_PROFILE round=%llu devices=%zu wire_bytes=%zu host_us=%lld mode=%s\n",
+                (unsigned long long) round, n, slot_size, (long long) host_us,
+                comm->mode == vk_comm_sync::sync_fd ? "sync_fd" : "host_bridge");
     }
     return true;
 }
